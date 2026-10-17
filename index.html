@@ -1,0 +1,1310 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <title>SIGMA ACADÉMIE — Deviens un Homme, pas un garçon</title>
+    <meta name="description" content="SIGMA ACADÉMIE, by Andy Swiftt · Haïti. État d'esprit sigma, standards, art de parler, koze ak fanm : des leçons gratuites et des modules premium pour devenir un Homme, pas un garçon. An fransè ak an kreyòl." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c0b09'/%3E%3Ctext x='32' y='47' font-family='Georgia,serif' font-size='42' font-weight='bold' fill='%23d4af37' text-anchor='middle'%3E%CE%A3%3C/text%3E%3C/svg%3E" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SIGMA ACADÉMIE" />
+    <meta property="og:title" content="SIGMA ACADÉMIE — Deviens un Homme, pas un garçon" />
+    <meta property="og:description" content="État d'esprit sigma, standards, art de parler, koze ak fanm. Leçons gratuites + modules premium. By Andy Swiftt · Haïti." />
+    <meta property="og:image" content="assets/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="SIGMA ACADÉMIE — homme en costume, noir et blanc, titre doré" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="ht_HT" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SIGMA ACADÉMIE — Deviens un Homme, pas un garçon" />
+    <meta name="twitter:description" content="État d'esprit sigma, standards, art de parler, koze ak fanm. Leçons gratuites + modules premium. By Andy Swiftt · Haïti." />
+    <meta name="twitter:image" content="assets/og-image.jpg" />
+    <meta name="twitter:image:alt" content="SIGMA ACADÉMIE — homme en costume, noir et blanc, titre doré" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root{
+        color-scheme: dark;
+        --bg:#0c0b09; --bg2:#100e0a; --surface:#16130e; --surface2:#1d1912;
+        --line:#2b2517; --line-soft:#211c12;
+        --text:#f0e8d8; --muted:#b8ab90; --faint:#8a7f68;
+        --gold:#d4af37; --gold2:#e9c766; --gold-deep:#9a7d24;
+        --gold-ink:#141005;
+        --shadow:0 18px 50px rgba(0,0,0,.5);
+        --hero-shade:linear-gradient(180deg, rgba(8,7,5,.55) 0%, rgba(8,7,5,.72) 55%, rgba(12,11,9,.97) 100%);
+        --header-bg:rgba(12,11,9,.92);
+      }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      body{
+        margin:0; background:var(--bg); color:var(--text);
+        font-family:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size:16.5px; line-height:1.65; -webkit-font-smoothing:antialiased;
+        overflow-x:hidden;
+      }
+      img{max-width:100%; display:block}
+      a{color:inherit}
+      h1,h2,h3{font-family:"Cinzel", Georgia, "Times New Roman", serif; line-height:1.18; margin:0; letter-spacing:.01em}
+      p{margin:0}
+      .wrap{max-width:1120px; margin:0 auto; padding:0 20px}
+      /* ---------- language blocks ---------- */
+      html[data-lang="fr"] .lg-ht{display:none !important}
+      html[data-lang="ht"] .lg-fr{display:none !important}
+      /* ---------- header ---------- */
+      header.site{
+        position:sticky; top:0; z-index:60; background:var(--header-bg);
+        backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+        border-bottom:1px solid var(--line);
+      }
+      .bar{display:flex; align-items:center; gap:14px; padding:10px 0}
+      .brand{display:flex; align-items:center; gap:11px; text-decoration:none; flex:0 0 auto}
+      .brand .mark{
+        width:42px; height:42px; border-radius:10px; display:grid; place-items:center;
+        background:linear-gradient(145deg,#1c1811,#0c0b09); border:1px solid var(--gold-deep);
+        color:var(--gold2); font-family:Georgia,serif; font-size:26px; font-weight:700; line-height:1;
+      }
+      
+      .brand .name{font-family:"Cinzel",Georgia,serif; font-weight:800; font-size:17px; letter-spacing:.06em; line-height:1.1}
+      .brand .name small{display:block; font-family:"Manrope",sans-serif; font-weight:600; font-size:10.5px; letter-spacing:.22em; color:var(--gold); text-transform:uppercase}
+      .spacer{flex:1}
+      .langtoggle{display:flex; border:1px solid var(--gold-deep); border-radius:999px; overflow:hidden; flex:0 0 auto}
+      .langtoggle button{
+        appearance:none; border:0; background:transparent; color:var(--muted); cursor:pointer;
+        font:700 13px "Manrope",sans-serif; padding:8px 14px; letter-spacing:.08em;
+      }
+      .langtoggle button.on{background:var(--gold); color:var(--gold-ink)}
+      .burger{
+        appearance:none; border:1px solid var(--line); background:var(--surface); color:var(--text);
+        width:42px; height:42px; border-radius:10px; cursor:pointer; display:grid; place-items:center; flex:0 0 auto;
+      }
+      .burger svg{width:20px; height:20px}
+      nav.main{display:none; border-top:1px solid var(--line-soft); padding:10px 0 14px}
+      nav.main.open{display:block}
+      nav.main a{
+        display:flex; align-items:center; justify-content:space-between; gap:10px;
+        text-decoration:none; padding:11px 6px; font-weight:600; font-size:15.5px;
+        border-bottom:1px solid var(--line-soft);
+      }
+      nav.main a:last-child{border-bottom:0}
+      nav.main a.active{color:var(--gold2)}
+      .tag{font-size:10.5px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; padding:3px 9px; border-radius:999px; white-space:nowrap}
+      .tag.free{border:1px solid var(--gold-deep); color:var(--gold2)}
+      .tag.prem{background:var(--gold); color:var(--gold-ink)}
+      @media (min-width:900px){
+        .burger{display:none}
+        nav.main{display:block; border-top:0; padding:0}
+        nav.main .wrap{display:flex; align-items:center; gap:4px; padding-top:2px; padding-bottom:10px; flex-wrap:wrap}
+        nav.main a{border-bottom:0; padding:8px 11px; border-radius:8px; font-size:14.5px}
+        nav.main a:hover{background:var(--surface2)}
+        nav.main a .tag{display:none}
+        nav.main a.active{background:var(--surface2)}
+      }
+      /* ---------- pages / routing ---------- */
+      .page{display:none}
+      .page.current{display:block; animation:pagein .35s ease both}
+      @keyframes pagein{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none}}
+      @media (prefers-reduced-motion: reduce){ .page.current{animation:none} html{scroll-behavior:auto} }
+      /* ---------- hero ---------- */
+      .hero{position:relative; isolation:isolate}
+      .hero .bgimg{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 18%; z-index:-2}
+      .hero::after{content:""; position:absolute; inset:0; background:var(--hero-shade); z-index:-1}
+      .hero .inner{padding:76px 0 64px; max-width:760px}
+      .kicker{
+        display:inline-flex; align-items:center; gap:9px; color:var(--gold2);
+        font-size:12px; font-weight:800; letter-spacing:.26em; text-transform:uppercase; margin-bottom:20px;
+      }
+      .kicker::before{content:""; width:34px; height:1px; background:var(--gold)}
+      .hero h1{font-size:clamp(38px, 8.4vw, 64px); font-weight:800; color:#f6efdd; max-width:12.5em}
+      .hero h1 em{font-style:normal; color:var(--gold2)}
+      .hero .sub{margin-top:20px; font-size:18px; color:#ddd2b8; max-width:34em}
+      .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:30px}
+      .btn{
+        display:inline-flex; align-items:center; gap:9px; text-decoration:none; cursor:pointer;
+        font-weight:800; font-size:15.5px; padding:14px 22px; border-radius:12px; border:1px solid transparent;
+        transition:transform .15s ease, box-shadow .15s ease;
+      }
+      .btn:active{transform:scale(.98)}
+      .btn.gold{background:linear-gradient(160deg, var(--gold2), var(--gold)); color:#171204; box-shadow:0 10px 26px rgba(212,175,55,.25)}
+      .btn.ghost{background:rgba(12,11,9,.35); border-color:rgba(233,199,102,.55); color:#f3e9cf}
+      .btn.wa{background:#1faa55; color:#fff; box-shadow:0 10px 26px rgba(31,170,85,.25)}
+      .btn.dark{background:var(--surface2); border-color:var(--line); color:var(--text)}
+      .hero .mini{margin-top:26px; font-size:13.5px; color:#b9ac8d; letter-spacing:.04em}
+      /* ---------- sections ---------- */
+      section.block{padding:58px 0}
+      section.block.alt{background:var(--bg2); border-top:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft)}
+      .sec-head{max-width:720px; margin-bottom:30px}
+      .sec-head h2{font-size:clamp(26px,5.4vw,38px); font-weight:800}
+      .sec-head h2 em{font-style:normal; color:var(--gold)}
+      .sec-head p{margin-top:12px; color:var(--muted); font-size:17px}
+      /* pillar cards */
+      .grid{display:grid; gap:16px; grid-template-columns:1fr}
+      @media (min-width:640px){ .grid{grid-template-columns:1fr 1fr} }
+      @media (min-width:980px){ .grid.cols3{grid-template-columns:repeat(3,1fr)} }
+      .card{
+        background:var(--surface); border:1px solid var(--line); border-radius:16px; overflow:hidden;
+        text-decoration:none; display:flex; flex-direction:column; box-shadow:var(--shadow);
+      }
+      a.card{transition:transform .18s ease, border-color .18s ease}
+      a.card:hover{transform:translateY(-3px); border-color:var(--gold-deep)}
+      .card .thumb{height:158px; width:100%; object-fit:cover; object-position:center 20%}
+      .card .body{padding:20px 20px 22px; display:flex; flex-direction:column; gap:9px; flex:1}
+      .card .rowline{display:flex; align-items:center; justify-content:space-between; gap:10px}
+      .card h3{font-size:20px; font-weight:700}
+      .card p{color:var(--muted); font-size:15px; flex:1}
+      .card .go{font-weight:800; color:var(--gold); font-size:14.5px; letter-spacing:.03em}
+      /* compare */
+      .vs{display:grid; gap:16px; grid-template-columns:1fr}
+      @media (min-width:820px){ .vs{grid-template-columns:1fr 1fr} }
+      .panel{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:26px 24px}
+      .panel.premium{border-color:var(--gold-deep); background:linear-gradient(170deg, var(--surface2), var(--surface))}
+      .panel h3{font-size:21px; display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+      .panel .price{font-family:"Cinzel",Georgia,serif; font-size:34px; font-weight:800; color:var(--gold); margin:12px 0 4px}
+      .panel .per{color:var(--muted); font-size:14px}
+      ul.tick{list-style:none; margin:16px 0 0; padding:0; display:grid; gap:10px}
+      ul.tick li{padding-left:28px; position:relative; color:var(--muted); font-size:15.5px}
+      ul.tick li::before{content:"—"; position:absolute; left:4px; color:var(--gold); font-weight:800}
+      ul.tick li b{color:var(--text)}
+      /* steps */
+      .steps{display:grid; gap:14px; grid-template-columns:1fr}
+      @media (min-width:820px){ .steps{grid-template-columns:repeat(3,1fr)} }
+      .step{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:20px}
+      .step .n{font-family:"Cinzel",Georgia,serif; font-size:26px; font-weight:800; color:var(--gold)}
+      .step h3{font-size:17px; margin:8px 0 6px; font-family:"Manrope",sans-serif; font-weight:800; letter-spacing:0}
+      .step p{color:var(--muted); font-size:15px}
+      .paybox{margin-top:16px; background:var(--surface); border:1px dashed var(--gold-deep); border-radius:14px; padding:20px 22px; display:grid; gap:8px}
+      .paybox .row{display:flex; flex-wrap:wrap; gap:6px 14px; font-size:15.5px}
+      .paybox .row b{color:var(--gold)}
+      .paybox .row span{color:var(--muted)}
+      /* testimonials */
+      .quote{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:24px}
+      .quote .stars{color:var(--gold); letter-spacing:4px; font-size:14px}
+      .quote p{margin-top:10px; font-size:16px}
+      .quote .who{margin-top:14px; color:var(--faint); font-size:13.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase}
+      .fineprint{margin-top:16px; color:var(--faint); font-size:13px}
+      /* ---------- lesson pages ---------- */
+      .pagehead{position:relative; isolation:isolate}
+      .pagehead .bgimg{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 18%; z-index:-2}
+      .pagehead::after{content:""; position:absolute; inset:0; background:var(--hero-shade); z-index:-1}
+      .pagehead .inner{padding:58px 0 46px; max-width:760px}
+      .pagehead h1{font-size:clamp(30px,6.6vw,46px); font-weight:800; color:#f6efdd}
+      .pagehead .sub{margin-top:14px; color:#ddd2b8; font-size:17px; max-width:36em}
+      .crumb{margin-bottom:16px}
+      .crumb a{color:var(--gold2); text-decoration:none; font-weight:700; font-size:14px}
+      .lessons{padding:46px 0 10px; max-width:820px}
+      .principle{
+        background:var(--surface); border:1px solid var(--line); border-radius:16px;
+        padding:26px 24px; margin-bottom:16px;
+      }
+      .principle .num{
+        font-family:"Cinzel",Georgia,serif; color:var(--gold); font-weight:800; font-size:14px;
+        letter-spacing:.3em; text-transform:uppercase; display:block; margin-bottom:8px;
+      }
+      .principle h2{font-size:23px; font-weight:700; margin-bottom:12px}
+      .principle p{color:var(--muted); margin-bottom:12px}
+      .principle p:last-child{margin-bottom:0}
+      .principle p b, .principle li b{color:var(--text)}
+      .principle ul{margin:0 0 12px; padding-left:20px; color:var(--muted)}
+      .principle li{margin-bottom:6px}
+      .example{
+        border:1px solid var(--line-soft); border-left:3px solid var(--gold);
+        background:var(--surface2); border-radius:10px; padding:14px 16px; margin-top:14px;
+        font-size:15px; color:var(--muted);
+      }
+      .example b{color:var(--gold); display:block; font-size:12px; letter-spacing:.2em; text-transform:uppercase; margin-bottom:5px}
+      .mantra{
+        text-align:center; padding:30px 22px; margin:6px 0 20px;
+        border:1px solid var(--gold-deep); border-radius:16px;
+        background:linear-gradient(170deg, var(--surface2), var(--surface));
+        font-family:"Cinzel",Georgia,serif; font-size:clamp(20px,4.6vw,27px); font-weight:700;
+      }
+      .mantra small{display:block; margin-top:10px; font-family:"Manrope",sans-serif; font-size:14px; color:var(--muted); font-weight:600; letter-spacing:0}
+      /* trio compare */
+      .trio{display:grid; gap:14px; grid-template-columns:1fr}
+      @media (min-width:820px){ .trio{grid-template-columns:repeat(3,1fr)} }
+      .trio .cell{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:20px}
+      .trio .cell.hot{border-color:var(--gold-deep)}
+      .trio h3{font-size:18px; margin-bottom:8px}
+      .trio h3 span{color:var(--gold)}
+      .trio p{color:var(--muted); font-size:15px}
+      /* locked */
+      .locked-card{
+        position:relative; background:var(--surface); border:1px solid var(--gold-deep);
+        border-radius:16px; padding:26px 24px; margin-bottom:16px; overflow:hidden;
+      }
+      .locked-card .num{font-family:"Cinzel",Georgia,serif; color:var(--gold); font-weight:800; font-size:14px; letter-spacing:.3em; text-transform:uppercase; display:block; margin-bottom:8px}
+      .locked-card h2{font-size:23px; font-weight:700; margin-bottom:10px; padding-right:44px}
+      .locked-card .teaser{color:var(--muted); max-width:56em}
+      .lockbadge{
+        position:absolute; top:20px; right:20px; width:38px; height:38px; border-radius:50%;
+        background:var(--gold); color:var(--gold-ink); display:grid; place-items:center;
+      }
+      .lockbadge svg{width:19px; height:19px}
+      .skeleton{margin-top:18px; display:grid; gap:9px; filter:blur(4px); opacity:.5; pointer-events:none; user-select:none}
+      .skeleton i{display:block; height:11px; border-radius:6px; background:var(--muted)}
+      .skeleton i:nth-child(2){width:88%} .skeleton i:nth-child(3){width:94%} .skeleton i:nth-child(4){width:62%}
+      .locked-card .unlock{margin-top:20px; display:flex; flex-wrap:wrap; gap:10px; align-items:center}
+      .locked-card .prix-note{color:var(--faint); font-size:13.5px}
+      /* end CTA */
+      .endcta{
+        margin:34px 0 60px; border:1px solid var(--gold-deep); border-radius:18px; padding:30px 24px;
+        background:linear-gradient(160deg, var(--surface2), var(--surface)); text-align:center;
+      }
+      .endcta h2{font-size:clamp(23px,5vw,30px)}
+      .endcta p{color:var(--muted); margin:12px auto 20px; max-width:36em}
+      .endcta .cta-row{justify-content:center; margin-top:0}
+      /* footer */
+      footer.site{border-top:1px solid var(--line); background:var(--bg2); padding:38px 0 46px; margin-top:10px}
+      footer .cols{display:grid; gap:26px; grid-template-columns:1fr}
+      @media (min-width:820px){ footer .cols{grid-template-columns:1.3fr 1fr 1fr} }
+      footer h4{font-family:"Cinzel",Georgia,serif; font-size:15px; letter-spacing:.08em; margin:0 0 12px; color:var(--gold)}
+      footer p, footer a{color:var(--muted); font-size:14.5px}
+      footer nav{display:grid; gap:8px}
+      footer nav a{text-decoration:none}
+      footer nav a:hover{color:var(--gold2)}
+      .sign{margin-top:30px; padding-top:20px; border-top:1px solid var(--line-soft); display:flex; flex-wrap:wrap; gap:8px 18px; justify-content:space-between; color:var(--faint); font-size:13.5px}
+      .sign b{color:var(--gold)}
+      /* ---------- compact phone header ---------- */
+      @media (max-width:520px){
+        .wrap{padding:0 16px}
+        .bar{gap:9px}
+        .brand{gap:8px; min-width:0}
+        .brand .mark{width:36px; height:36px; font-size:22px; border-radius:8px}
+        .brand .name{font-size:14.5px}
+        .brand .name small{font-size:9px; letter-spacing:.18em}
+        .langtoggle button{padding:7px 10px; font-size:12px}
+        .burger{width:38px; height:38px}
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap">
+        <div class="bar">
+          <a class="brand" href="#/home" aria-label="SIGMA ACADÉMIE — Accueil">
+            <span class="mark">Σ</span>
+            <span class="name">SIGMA ACADÉMIE<small>by Andy Swiftt</small></span>
+          </a>
+          <span class="spacer"></span>
+          <div class="langtoggle" role="group" aria-label="Langue / Lang">
+            <button type="button" id="btn-fr" class="on">FR</button>
+            <button type="button" id="btn-ht">HT</button>
+          </div>
+          <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="main" id="mainnav">
+        <div class="wrap">
+          <a href="#/home" data-nav="home"><span class="lg-fr">Accueil</span><span class="lg-ht">Akèy</span></a>
+          <a href="#/sigma" data-nav="sigma"><span class="lg-fr">L'état d'esprit Sigma</span><span class="lg-ht">Lespri Sigma</span><span class="tag free">Gratuit</span></a>
+          <a href="#/homme" data-nav="homme"><span class="lg-fr">Un Homme, pas un garçon</span><span class="lg-ht">Yon Nonm, pa yon ti gason</span><span class="tag free">Gratuit</span></a>
+          <a href="#/standards" data-nav="standards"><span class="lg-fr">Tes standards</span><span class="lg-ht">Estanda w yo</span><span class="tag free">Gratuit</span></a>
+          <a href="#/parler" data-nav="parler"><span class="lg-fr">L'art de parler</span><span class="lg-ht">Atizay pale</span><span class="tag free">Gratuit</span></a>
+          <a href="#/telephone" data-nav="telephone"><span class="lg-fr">Koze ak fanm — Téléphone</span><span class="lg-ht">Koze ak fanm — Telefòn</span><span class="tag prem">Premium</span></a>
+          <a href="#/face" data-nav="face"><span class="lg-fr">Koze ak fanm — Fasafas</span><span class="lg-ht">Koze ak fanm — Fasafas</span><span class="tag prem">Premium</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ============================= ACCUEIL ============================= -->
+      <section class="page" data-page="home">
+        <div class="hero">
+          <img class="bgimg" src="assets/hero-sigma.jpg" alt="Homme en costume trois pièces, mains levées, noir et blanc" />
+          <div class="wrap">
+            <div class="inner">
+              <span class="kicker">Sigma Académie · Haïti</span>
+              <h1 class="lg-fr">Deviens un <em>Homme</em>, pas un garçon.</h1>
+              <h1 class="lg-ht">Vin tounen yon <em>Nonm</em>, pa yon ti gason.</h1>
+              <p class="sub lg-fr">Une académie pour les hommes qui veulent se construire : état d'esprit, standards, parole, présence. Des leçons directes, sans bruit et sans excuses — en français et en créole.</p>
+              <p class="sub lg-ht">Yon akademi pou gason ki vle konstwi tèt yo : lespri, estanda, pawòl, presans. Leson dirèk, san bri epi san eskiz — an fransè ak an kreyòl.</p>
+              <div class="cta-row">
+                <a class="btn gold" href="#/sigma"><span class="lg-fr">Commencer gratuitement</span><span class="lg-ht">Kòmanse gratis</span></a>
+                <a class="btn ghost" href="#tarifs" data-scroll="tarifs"><span class="lg-fr">Voir les modules premium</span><span class="lg-ht">Gade modil premium yo</span></a>
+              </div>
+              <p class="mini lg-fr">4 modules gratuits · 2 modules premium · FR + Kreyòl</p>
+              <p class="mini lg-ht">4 modil gratis · 2 modil premium · FR + Kreyòl</p>
+            </div>
+          </div>
+        </div>
+
+        <section class="block">
+          <div class="wrap">
+            <div class="sec-head">
+              <h2 class="lg-fr">Les 6 <em>piliers</em></h2>
+              <h2 class="lg-ht">6 <em>poto</em> yo</h2>
+              <p class="lg-fr">Chaque pilier a sa propre page. Les quatre premiers sont entièrement gratuits. Les deux derniers contiennent les techniques complètes — c'est là que tout se joue.</p>
+              <p class="lg-ht">Chak poto gen paj pa l. Kat premye yo gratis nèt. De dènye yo gen teknik konplè yo — se la tout bagay la jwe.</p>
+            </div>
+            <div class="grid cols3">
+              <a class="card" href="#/sigma">
+                <img class="thumb" src="assets/sigma-fedora.jpg" alt="Visage d'homme dans l'ombre d'un fedora, noir et blanc" loading="lazy" />
+                <div class="body">
+                  <div class="rowline"><h3 class="lg-fr">L'état d'esprit Sigma</h3><h3 class="lg-ht">Lespri Sigma</h3><span class="tag free">Gratuit</span></div>
+                  <p class="lg-fr">Indépendant, hors hiérarchie, tu te suffis à toi-même. Comprends ce qu'est vraiment un sigma — et pourquoi il ne cherche l'approbation de personne.</p>
+                  <p class="lg-ht">Endepandan, deyò yerachi, ou sifi pou kont ou. Konprann sa yon sigma ye vrèman — epi poukisa li pa chèche apwobasyon pèsonn.</p>
+                  <span class="go lg-fr">Lire la leçon →</span><span class="go lg-ht">Li leson an →</span>
+                </div>
+              </a>
+              <a class="card" href="#/homme">
+                <img class="thumb" src="assets/homme-gare.jpg" alt="Homme en costume et chapeau dans une gare, noir et blanc" loading="lazy" />
+                <div class="body">
+                  <div class="rowline"><h3 class="lg-fr">Un Homme, pas un garçon</h3><h3 class="lg-ht">Yon Nonm, pa yon ti gason</h3><span class="tag free">Gratuit</span></div>
+                  <p class="lg-fr">Responsabilité, parole donnée, contrôle des émotions, zéro excuse. La différence entre un homme et un garçon ne se voit pas à l'âge — elle se voit aux actes.</p>
+                  <p class="lg-ht">Responsablite, pawòl ou bay, kontwòl emosyon, zewo eskiz. Diferans ant yon nonm ak yon ti gason pa wè nan laj — li wè nan aksyon.</p>
+                  <span class="go lg-fr">Lire la leçon →</span><span class="go lg-ht">Li leson an →</span>
+                </div>
+              </a>
+              <a class="card" href="#/standards">
+                <img class="thumb" src="assets/standards-gatsby.jpg" alt="Homme en smoking levant une coupe, fond noir" loading="lazy" />
+                <div class="body">
+                  <div class="rowline"><h3 class="lg-fr">Tes standards</h3><h3 class="lg-ht">Estanda w yo</h3><span class="tag free">Gratuit</span></div>
+                  <p class="lg-fr">Tes standards, c'est ce que tu tolères. Apprends à dire non, à t'entourer des bonnes personnes et à tenir ton niveau — corps, temps, entourage.</p>
+                  <p class="lg-ht">Estanda w, se sa ou tolere. Aprann di non, antoure w ak bon moun, epi kenbe nivo w — kò, tan, antouraj.</p>
+                  <span class="go lg-fr">Lire la leçon →</span><span class="go lg-ht">Li leson an →</span>
+                </div>
+              </a>
+              <a class="card" href="#/parler">
+                <img class="thumb" src="assets/parler-rose.jpg" alt="Homme au chapeau blanc tenant une rose rouge, noir et blanc" loading="lazy" />
+                <div class="body">
+                  <div class="rowline"><h3 class="lg-fr">L'art de parler</h3><h3 class="lg-ht">Atizay pale</h3><span class="tag free">Gratuit</span></div>
+                  <p class="lg-fr">Parler lentement, voix posée, écouter plus que parler. Un homme qui maîtrise sa parole n'a jamais besoin de crier pour être entendu.</p>
+                  <p class="lg-ht">Pale dousman, vwa poze, koute plis pase w pale. Yon nonm ki metrize pawòl li pa janm bezwen rele pou moun tande l.</p>
+                  <span class="go lg-fr">Lire la leçon →</span><span class="go lg-ht">Li leson an →</span>
+                </div>
+              </a>
+              <a class="card" href="#/telephone">
+                <img class="thumb" src="assets/femme-telephone-couple.jpg" alt="Un couple élégant se tenant la main dans un champ au coucher du soleil" loading="lazy" />
+                <div class="body">
+                  <div class="rowline"><h3 class="lg-fr">Koze ak fanm — Téléphone</h3><h3 class="lg-ht">Koze ak fanm — Telefòn</h3><span class="tag prem">Premium</span></div>
+                  <p class="lg-fr">Les erreurs qui tuent l'attirance au téléphone, puis les techniques complètes : quand appeler, quoi dire, le rythme des messages. Intro gratuite, suite premium.</p>
+                  <p class="lg-ht">Erè ki touye atirans nan telefòn, epi teknik konplè yo : ki lè pou w rele, sa pou w di, ritm mesaj yo. Entwo gratis, rès la premium.</p>
+                  <span class="go lg-fr">Découvrir le module →</span><span class="go lg-ht">Dekouvri modil la →</span>
+                </div>
+              </a>
+              <a class="card" href="#/face">
+                <img class="thumb" src="assets/femme-face-couple.jpg" alt="Un couple élégant montant un escalier de palace" loading="lazy" />
+                <div class="body">
+                  <div class="rowline"><h3 class="lg-fr">Koze ak fanm — Fasafas</h3><h3 class="lg-ht">Koze ak fanm — Fasafas</h3><span class="tag prem">Premium</span></div>
+                  <p class="lg-fr">Langage corporel, regard, confiance calme, écoute active : comment créer une vraie connexion face à face, sans jouer un rôle. Intro gratuite, suite premium.</p>
+                  <p class="lg-ht">Langaj kò, rega, konfyans kalm, koute aktiv : kijan pou w kreye yon vrè koneksyon fasafas, san w pa jwe yon wòl. Entwo gratis, rès la premium.</p>
+                  <span class="go lg-fr">Découvrir le module →</span><span class="go lg-ht">Dekouvri modil la →</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="block alt">
+          <div class="wrap">
+            <div class="sec-head">
+              <h2 class="lg-fr">Gratuit vs <em>Premium</em></h2>
+              <h2 class="lg-ht">Gratis vs <em>Premium</em></h2>
+              <p class="lg-fr">Les principes de base sont gratuits, pour tout le monde, pour toujours. Les techniques avancées — celles qui changent concrètement tes résultats — sont dans les modules premium.</p>
+              <p class="lg-ht">Prensip de baz yo gratis, pou tout moun, pou toujou. Teknik avanse yo — sa ki chanje rezilta w yo vrèman — yo nan modil premium yo.</p>
+            </div>
+            <div class="vs">
+              <div class="panel">
+                <h3><span class="lg-fr">Les fondations</span><span class="lg-ht">Fondasyon yo</span><span class="tag free">Gratuit</span></h3>
+                <div class="price">0 G</div>
+                <p class="per lg-fr">Pour toujours, sans inscription.</p>
+                <p class="per lg-ht">Pou toujou, san enskripsyon.</p>
+                <ul class="tick">
+                  <li class="lg-fr"><b>L'état d'esprit Sigma</b> — indépendance, silence, discipline, zéro validation.</li>
+                  <li class="lg-ht"><b>Lespri Sigma</b> — endepandans, silans, disiplin, zewo validasyon.</li>
+                  <li class="lg-fr"><b>Un Homme, pas un garçon</b> — responsabilité, parole, émotions, zéro excuse.</li>
+                  <li class="lg-ht"><b>Yon Nonm, pa yon ti gason</b> — responsablite, pawòl, emosyon, zewo eskiz.</li>
+                  <li class="lg-fr"><b>Tes standards</b> — dire non, entourage, hygiène de vie.</li>
+                  <li class="lg-ht"><b>Estanda w yo</b> — di non, antouraj, ijyèn lavi.</li>
+                  <li class="lg-fr"><b>L'art de parler</b> — voix posée, écoute, présence.</li>
+                  <li class="lg-ht"><b>Atizay pale</b> — vwa poze, koute, presans.</li>
+                  <li class="lg-fr"><b>Les intros des modules premium</b> — les erreurs à ne plus jamais faire.</li>
+                  <li class="lg-ht"><b>Entwo modil premium yo</b> — erè ou pa dwe fè ankò.</li>
+                </ul>
+              </div>
+              <div class="panel premium">
+                <h3><span class="lg-fr">Les techniques complètes</span><span class="lg-ht">Teknik konplè yo</span><span class="tag prem">Premium</span></h3>
+                <div class="price">300 G</div>
+                <p class="per lg-fr">par module — ou 750 G le pack complet (les 2 modules).</p>
+                <p class="per lg-ht">pa modil — oswa 750 G pak konplè a (2 modil yo).</p>
+                <ul class="tick">
+                  <li class="lg-fr"><b>Téléphone</b> — quand appeler plutôt que texter, la structure d'un appel réussi, le rythme exact des messages.</li>
+                  <li class="lg-ht"><b>Telefòn</b> — ki lè pou w rele olye w ekri, estrikti yon apèl ki reyisi, ritm egzak mesaj yo.</li>
+                  <li class="lg-fr"><b>Fasafas</b> — la confiance calme, l'écoute active, connecter au lieu d'impressionner, savoir partir au bon moment.</li>
+                  <li class="lg-ht"><b>Fasafas</b> — konfyans kalm, koute aktiv, konekte olye w enpresyone, konn ki lè pou w pati.</li>
+                  <li class="lg-fr"><b>Exemples concrets</b> — phrases exactes, situations réelles, ce qu'il faut dire et ne jamais dire.</li>
+                  <li class="lg-ht"><b>Egzanp konkrè</b> — fraz egzak, sitiyasyon reyèl, sa pou w di ak sa ou pa dwe janm di.</li>
+                  <li class="lg-fr"><b>Accès direct sur WhatsApp</b> — déblocage rapide après paiement.</li>
+                  <li class="lg-ht"><b>Aksè dirèk sou WhatsApp</b> — deblokaj rapid apre peman.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="tarifs">
+          <div class="wrap">
+            <div class="sec-head">
+              <h2 class="lg-fr">Débloquer un <em>module</em></h2>
+              <h2 class="lg-ht">Debloke yon <em>modil</em></h2>
+              <p class="lg-fr">Simple, comme tout ce qui marche : tu paies, tu envoies la preuve, tu reçois l'accès. Pas de carte bancaire, pas de compte à créer.</p>
+              <p class="lg-ht">Senp, tankou tout sa ki mache : ou peye, ou voye prèv la, ou resevwa aksè a. Pa gen kat bank, pa gen kont pou w kreye.</p>
+            </div>
+            <div class="steps">
+              <div class="step">
+                <span class="n">01</span>
+                <h3 class="lg-fr">Choisis ton module</h3>
+                <h3 class="lg-ht">Chwazi modil ou a</h3>
+                <p class="lg-fr">Téléphone ou Fasafas : <b>300 G</b> chacun. Les deux ensemble (pack complet) : <b>750 G</b>.</p>
+                <p class="lg-ht">Telefòn oswa Fasafas : <b>300 G</b> chak. Toude ansanm (pak konplè) : <b>750 G</b>.</p>
+              </div>
+              <div class="step">
+                <span class="n">02</span>
+                <h3 class="lg-fr">Paie en MonCash ou Binance</h3>
+                <h3 class="lg-ht">Peye ak MonCash oswa Binance</h3>
+                <p class="lg-fr">Envoie le paiement sur l'un des deux comptes ci-dessous, puis garde ta capture d'écran.</p>
+                <p class="lg-ht">Voye peman an sou youn nan de kont ki anba yo, epi kenbe kaptir ekran w lan.</p>
+              </div>
+              <div class="step">
+                <span class="n">03</span>
+                <h3 class="lg-fr">Envoie la preuve sur WhatsApp</h3>
+                <h3 class="lg-ht">Voye prèv la sou WhatsApp</h3>
+                <p class="lg-fr">Clique sur « Débloquer » dans le module, joins ta preuve de paiement : ton accès est activé.</p>
+                <p class="lg-ht">Klike sou « Debloke » nan modil la, mete prèv peman w lan : aksè w la aktive.</p>
+              </div>
+            </div>
+            <div class="paybox">
+              <div class="row"><b>MonCash</b><span class="lg-fr">+509 34 97 9011 — Nom : Faub*** Fabio***</span><span class="lg-ht">+509 34 97 9011 — Non : Faub*** Fabio***</span></div>
+              <div class="row"><b>Binance Pay</b><span>ID : 1253095098</span></div>
+              <div class="row"><b class="lg-fr">Tarifs</b><b class="lg-ht">Pri</b><span class="lg-fr">300 G par module premium · 750 G le pack complet (Téléphone + Fasafas)</span><span class="lg-ht">300 G pa modil premium · 750 G pak konplè a (Telefòn + Fasafas)</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block alt">
+          <div class="wrap">
+            <div class="sec-head">
+              <h2 class="lg-fr">Exemples de <em>retours</em></h2>
+              <h2 class="lg-ht">Egzanp <em>retou</em></h2>
+              <p class="lg-fr">Le type de changements que les lecteurs de l'académie racontent le plus souvent.</p>
+              <p class="lg-ht">Kalite chanjman lektè akademi an rakonte pi souvan yo.</p>
+            </div>
+            <div class="grid cols3">
+              <div class="quote">
+                <div class="stars">★★★★★</div>
+                <p class="lg-fr">« J'ai arrêté de courir après la validation. Je me lève, je travaille, je tiens ma parole. Les gens autour de moi l'ont remarqué avant moi. »</p>
+                <p class="lg-ht">« Mwen sispann kouri dèyè validasyon. Mwen leve, mwen travay, mwen kenbe pawòl mwen. Moun bò kote m yo remake l anvan mwen. »</p>
+                <p class="who lg-fr">Retour type — Module Sigma</p>
+                <p class="who lg-ht">Retou tip — Modil Sigma</p>
+              </div>
+              <div class="quote">
+                <div class="stars">★★★★★</div>
+                <p class="lg-fr">« Avant, j'envoyais dix messages sans réponse. Maintenant j'appelle au bon moment, je parle calmement, et les conversations vont quelque part. »</p>
+                <p class="lg-ht">« Anvan, mwen te konn voye dis mesaj san repons. Kounye a mwen rele nan bon moman an, mwen pale kalm, epi konvèsasyon yo ale yon kote. »</p>
+                <p class="who lg-fr">Retour type — Module Téléphone</p>
+                <p class="who lg-ht">Retou tip — Modil Telefòn</p>
+              </div>
+              <div class="quote">
+                <div class="stars">★★★★★</div>
+                <p class="lg-fr">« Le plus gros changement : je dis non sans trembler. À la mauvaise compagnie, aux mauvaises habitudes, à ce qui me tire vers le bas. »</p>
+                <p class="lg-ht">« Pi gwo chanjman an : mwen di non san m pa tranble. Ak move konpayi, move abitud, ak sa k ap tire m anba. »</p>
+                <p class="who lg-fr">Retour type — Module Standards</p>
+                <p class="who lg-ht">Retou tip — Modil Estanda</p>
+              </div>
+            </div>
+            <p class="fineprint lg-fr">Ces retours sont présentés comme des exemples du type de résultats rapportés par les lecteurs — ce ne sont pas des avis clients vérifiés.</p>
+            <p class="fineprint lg-ht">Retou sa yo prezante kòm egzanp kalite rezilta lektè yo rapòte — yo pa avi kliyan verifye.</p>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="wrap">
+            <div class="endcta" style="margin:0">
+              <h2 class="lg-fr">Prêt à passer au niveau supérieur ?</h2>
+              <h2 class="lg-ht">Èske w pare pou w monte nan nivo siperyè a ?</h2>
+              <p class="lg-fr">Commence par les leçons gratuites. Quand tu es prêt pour les techniques complètes, écris-moi directement sur WhatsApp.</p>
+              <p class="lg-ht">Kòmanse ak leson gratis yo. Lè w pare pou teknik konplè yo, ekri m dirèkteman sou WhatsApp.</p>
+              <div class="cta-row">
+                <a class="btn wa" data-wa="general" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Écrire sur WhatsApp</span><span class="lg-ht">Ekri sou WhatsApp</span></a>
+                <a class="btn dark" href="#/telephone"><span class="lg-fr">Voir le module Téléphone</span><span class="lg-ht">Gade modil Telefòn lan</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- ============================= SIGMA ============================= -->
+      <section class="page" data-page="sigma">
+        <div class="pagehead">
+          <img class="bgimg" src="assets/sigma-fedora.jpg" alt="Visage d'homme dans l'ombre d'un fedora, noir et blanc" />
+          <div class="wrap"><div class="inner">
+            <p class="crumb"><a href="#/home"><span class="lg-fr">← Tous les piliers</span><span class="lg-ht">← Tout poto yo</span></a></p>
+            <span class="kicker lg-fr">Module gratuit · Pilier 1</span>
+            <span class="kicker lg-ht">Modil gratis · Poto 1</span>
+            <h1 class="lg-fr">L'état d'esprit Sigma</h1>
+            <h1 class="lg-ht">Lespri Sigma</h1>
+            <p class="sub lg-fr">Le sigma n'est pas un titre que tu revendiques. C'est une façon de vivre que les autres constatent. Voici ce que ça veut dire, concrètement.</p>
+            <p class="sub lg-ht">Sigma se pa yon tit ou reklame. Se yon fason w viv ke lòt moun konstate. Men sa sa vle di, konkrètman.</p>
+          </div></div>
+        </div>
+        <div class="wrap"><div class="lessons">
+          <div class="principle">
+            <span class="num lg-fr">Principe 01</span><span class="num lg-ht">Prensip 01</span>
+            <h2 class="lg-fr">Hors de la hiérarchie</h2>
+            <h2 class="lg-ht">Deyò yerachi a</h2>
+            <p class="lg-fr">La plupart des hommes jouent à un jeu : monter dans l'échelle sociale, impressionner le groupe, être reconnu comme « le chef ». L'alpha veut le trône. Le sigma, lui, <b>ne joue pas au jeu</b>. Il ne cherche ni à dominer les autres, ni à être dominé. Il construit sa propre table au lieu de se battre pour une place à celle des autres.</p>
+            <p class="lg-ht">Pifò gason ap jwe yon jwèt : monte nan echèl sosyal la, enpresyone gwoup la, pou moun rekonèt yo kòm « chèf ». Alfa a vle twòn lan. Sigma a, li menm, <b>pa jwe jwèt la</b>. Li pa chèche domine lòt moun, ni kite yo domine l. Li konstwi tab pa l olye li goumen pou yon plas nan tab lòt moun.</p>
+            <p class="lg-fr">Ça ne veut pas dire vivre seul dans une grotte. Ça veut dire : tes décisions viennent de tes valeurs, pas de ce que le groupe va penser. Quand tu cesses de jouer pour le classement, tu deviens imprévisible — et libre.</p>
+            <p class="lg-ht">Sa pa vle di viv pou kont ou nan yon gwòt. Sa vle di : desizyon w yo soti nan valè w yo, pa nan sa gwoup la ap panse. Lè w sispann jwe pou klasman an, ou vin enprevizib — epi lib.</p>
+          </div>
+
+          <div class="sec-head" style="margin:26px 0 16px">
+            <h2 class="lg-fr" style="font-size:24px">Alpha, bêta, sigma : la vraie différence</h2>
+            <h2 class="lg-ht" style="font-size:24px">Alfa, beta, sigma : vrè diferans lan</h2>
+          </div>
+          <div class="trio" style="margin-bottom:16px">
+            <div class="cell">
+              <h3>Alpha</h3>
+              <p class="lg-fr">Le leader du groupe. Il tire son pouvoir de sa position : les autres le suivent, et il le sait. Sa force dépend du groupe — sans public, il perd son terrain de jeu.</p>
+              <p class="lg-ht">Lidè gwoup la. Li tire pouvwa l nan pozisyon l : lòt moun swiv li, epi li konn sa. Fòs li depann de gwoup la — san piblik, li pèdi teren jwèt li.</p>
+            </div>
+            <div class="cell">
+              <h3>Bêta <span class="lg-fr">(l'homme qui suit)</span><span class="lg-ht">(gason k ap suiv)</span></h3>
+              <p class="lg-fr">Il attend qu'on lui dise quoi faire et cherche l'approbation avant d'agir. Il évite les conflits, les responsabilités et les décisions — puis il se plaint du résultat.</p>
+              <p class="lg-ht">Li tann moun di l sa pou l fè epi li chèche apwobasyon anvan li aji. Li evite konfli, responsablite ak desizyon — epi apre li plenyen rezilta a.</p>
+            </div>
+            <div class="cell hot">
+              <h3>Sigma <span>Σ</span></h3>
+              <p class="lg-fr">Il avance seul quand il le faut, avec les autres quand ça a du sens. Son pouvoir ne dépend de personne : ni public, ni titre, ni validation. On le respecte parce qu'il se respecte d'abord.</p>
+              <p class="lg-ht">Li avanse pou kont li lè sa nesesè, ak lòt moun lè sa gen sans. Pouvwa l pa depann de pèsonn : ni piblik, ni tit, ni validasyon. Moun respekte l paske li respekte tèt li anvan.</p>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 02</span><span class="num lg-ht">Prensip 02</span>
+            <h2 class="lg-fr">L'indépendance réelle</h2>
+            <h2 class="lg-ht">Vrè endepandans lan</h2>
+            <p class="lg-fr">L'indépendance n'est pas une phrase, c'est une structure. Trois piliers : <b>ton argent</b> (tu travailles à ne dépendre de personne pour vivre), <b>tes émotions</b> (ton humeur ne dépend pas de qui t'a écrit ou ignoré), <b>tes décisions</b> (tu choisis ta direction, tu ne la demandes pas en permission).</p>
+            <p class="lg-ht">Endepandans se pa yon fraz, se yon estrikti. Twa poto : <b>lajan w</b> (ou travay pou w pa depann de pèsonn pou w viv), <b>emosyon w</b> (atitud ou pa depann de ki moun ki ekri w oswa ki inyore w), <b>desizyon w</b> (ou chwazi direksyon w, ou pa mande pèmisyon pou li).</p>
+            <div class="example">
+              <b class="lg-fr">Concrètement</b><b class="lg-ht">Konkrètman</b>
+              <span class="lg-fr">Apprends une compétence qui rapporte. Mets de l'argent de côté chaque mois, même petit. Répare ce que tu peux réparer toi-même. Chaque chose que tu sais faire seul est un morceau de liberté.</span>
+              <span class="lg-ht">Aprann yon konpetans ki rapòte. Mete lajan dekote chak mwa, menm si l piti. Repare sa w ka repare pou kont ou. Chak bagay ou konn fè pou kont ou se yon moso libète.</span>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 03</span><span class="num lg-ht">Prensip 03</span>
+            <h2 class="lg-fr">La discipline quotidienne</h2>
+            <h2 class="lg-ht">Disiplin chak jou</h2>
+            <p class="lg-fr">La motivation est un visiteur : elle vient, elle repart. La discipline est un locataire permanent. Le sigma ne se demande pas « est-ce que j'en ai envie ? » — il se demande « est-ce que c'est au programme ? ». <b>Le corps</b> : entraîne-toi même 30 minutes. <b>L'esprit</b> : lis, apprends, avance sur un projet chaque jour. <b>La parole</b> : si tu l'as dit, tu le fais.</p>
+            <p class="lg-ht">Motivasyon se yon vizitè : li vini, li ale. Disiplin se yon lokatè pèmanan. Sigma a pa mande tèt li « èske m anvi ? » — li mande « èske se nan pwogram lan ? ». <b>Kò a</b> : antrene w menm si se 30 minit. <b>Lespri a</b> : li, aprann, avanse sou yon pwojè chak jou. <b>Pawòl la</b> : si w te di l, ou fè l.</p>
+            <div class="example">
+              <b class="lg-fr">Le test simple</b><b class="lg-ht">Tès senp lan</b>
+              <span class="lg-fr">Un garçon agit quand il se sent bien. Un sigma agit, et c'est l'action qui le fait se sentir bien. Commence petit : même heure de lever, lit fait, 20 pompes, une tâche importante avant le téléphone. Sept jours d'affilée. Puis trente.</span>
+              <span class="lg-ht">Yon ti gason aji lè li santi l byen. Yon sigma aji, epi se aksyon an ki fè l santi l byen. Kòmanse piti : menm lè leve, kabann ranje, 20 ponp, yon tach enpòtan anvan telefòn lan. Sèt jou swivi. Apre, trant.</span>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 04</span><span class="num lg-ht">Prensip 04</span>
+            <h2 class="lg-fr">Le silence comme force</h2>
+            <h2 class="lg-ht">Silans kòm fòs</h2>
+            <p class="lg-fr">L'homme qui parle tout le temps révèle tout : ses plans, ses faiblesses, ses peurs. Le sigma parle moins — et chaque mot pèse plus. Le silence n'est pas de la timidité : c'est de la <b>maîtrise</b>. Tu observes, tu écoutes, tu comprends la pièce entière pendant que les autres ne voient que leur coin.</p>
+            <p class="lg-ht">Gason k ap pale toutan revele tout bagay : plan l, feblès li, pè li. Sigma a pale mwens — epi chak mo peze plis. Silans se pa timidite : se <b>metriz</b>. Ou obsève, ou koute, ou konprann tout chanm lan pandan lòt moun ap wè sèlman kwen pa yo.</p>
+            <p class="lg-fr">Règle pratique : ne raconte pas tes projets avant qu'ils existent. Travaille en silence, laisse le résultat faire le bruit. Et quand quelqu'un te provoque, rappelle-toi : celui qui réagit à tout est contrôlé par tout le monde.</p>
+            <p class="lg-ht">Règ pratik : pa rakonte pwojè w yo anvan yo egziste. Travay an silans, kite rezilta a fè bri a. Epi lè yon moun pwovoke w, sonje : moun ki reyaji ak tout bagay, tout moun kontwole l.</p>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 05</span><span class="num lg-ht">Prensip 05</span>
+            <h2 class="lg-fr">Ne jamais chercher la validation</h2>
+            <h2 class="lg-ht">Pa janm chèche validasyon</h2>
+            <p class="lg-fr">Poster pour être vu, parler pour être applaudi, agir pour être aimé : c'est vivre en location dans l'opinion des autres. Le sigma se valide lui-même, le soir, devant son miroir : « Est-ce que j'ai tenu mes standards aujourd'hui ? » Si la réponse est oui, l'avis du monde peut attendre.</p>
+            <p class="lg-ht">Poste pou moun wè w, pale pou moun bat bravo, aji pou moun renmen w : se viv an lokasyon nan opinyon lòt moun. Sigma a valide tèt li, leswa, devan glas li : « Èske mwen te kenbe estanda m yo jodi a ? » Si repons lan se wi, opinyon mond lan ka tann.</p>
+            <div class="example">
+              <b class="lg-fr">À retenir</b><b class="lg-ht">Sa pou w kenbe</b>
+              <span class="lg-fr">Le respect ne se demande pas, il se constate. Travaille, discipline-toi, tiens ta parole — le respect arrive tout seul, sans que tu aies eu besoin de le mendier une seule fois.</span>
+              <span class="lg-ht">Respè pa mande, li konstate. Travay, disipline w, kenbe pawòl ou — respè a ap vini pou kont li, san w pa janm bezwen mande l.</span>
+            </div>
+          </div>
+
+          <div class="mantra">
+            <span class="lg-fr">« Je n'ai besoin de personne pour avancer. Et c'est exactement pour ça qu'on me suit. »</span>
+            <span class="lg-ht">« Mwen pa bezwen pèsonn pou m avanse. Epi se egzakteman pou sa yo suiv mwen. »</span>
+            <small class="lg-fr">La suite : deviens l'homme qui tient ce standard, chaque jour.</small>
+            <small class="lg-ht">Swit la : vin nonm ki kenbe estanda sa a, chak jou.</small>
+          </div>
+          <div class="endcta">
+            <h2 class="lg-fr">Prochain pilier : Un Homme, pas un garçon</h2>
+            <h2 class="lg-ht">Pwochen poto : Yon Nonm, pa yon ti gason</h2>
+            <p class="lg-fr">L'état d'esprit est la base. Maintenant, voyons ce qui sépare un homme d'un garçon dans les actes de tous les jours.</p>
+            <p class="lg-ht">Lespri a se baz la. Kounye a, ann wè sa ki separe yon nonm ak yon ti gason nan zak chak jou yo.</p>
+            <div class="cta-row">
+              <a class="btn gold" href="#/homme"><span class="lg-fr">Continuer →</span><span class="lg-ht">Kontinye →</span></a>
+            </div>
+          </div>
+        </div></div>
+      </section>
+
+      <!-- ============================= HOMME ============================= -->
+      <section class="page" data-page="homme">
+        <div class="pagehead">
+          <img class="bgimg" src="assets/homme-gare.jpg" alt="Homme en costume et chapeau dans une gare, noir et blanc" />
+          <div class="wrap"><div class="inner">
+            <p class="crumb"><a href="#/home"><span class="lg-fr">← Tous les piliers</span><span class="lg-ht">← Tout poto yo</span></a></p>
+            <span class="kicker lg-fr">Module gratuit · Pilier 2</span>
+            <span class="kicker lg-ht">Modil gratis · Poto 2</span>
+            <h1 class="lg-fr">Un Homme, pas un garçon</h1>
+            <h1 class="lg-ht">Yon Nonm, pa yon ti gason</h1>
+            <p class="sub lg-fr">L'âge ne fait pas l'homme. Un garçon de 40 ans existe. Un homme de 20 ans aussi. La différence se voit à cinq endroits précis.</p>
+            <p class="sub lg-ht">Laj pa fè nonm lan. Yon ti gason 40 an egziste. Yon nonm 20 an tou. Diferans lan wè nan senk kote presi.</p>
+          </div></div>
+        </div>
+        <div class="wrap"><div class="lessons">
+          <div class="principle">
+            <span class="num lg-fr">Principe 01</span><span class="num lg-ht">Prensip 01</span>
+            <h2 class="lg-fr">La responsabilité totale</h2>
+            <h2 class="lg-ht">Responsablite total</h2>
+            <p class="lg-fr">Un garçon cherche un coupable : l'économie, sa famille, son ex, la malchance. Un homme cherche <b>sa part</b> dans le problème — parce que c'est la seule partie qu'il peut changer. « C'est ma faute » n'est pas une faiblesse : c'est la phrase la plus puissante qui existe, parce qu'elle te rend le volant.</p>
+            <p class="lg-ht">Yon ti gason chèche yon koupab : ekonomi an, fanmi l, ansyen mennaj li, move chans. Yon nonm chèche <b>pòsyon pa l</b> nan pwoblèm lan — paske se sèl pati li ka chanje. « Se fòt mwen » se pa yon feblès : se fraz ki pi pwisan ki egziste, paske li remèt ou volan an.</p>
+            <div class="example">
+              <b class="lg-fr">Exemple</b><b class="lg-ht">Egzanp</b>
+              <span class="lg-fr">Tu as raté une opportunité ? Le garçon dit « on ne m'a pas aidé ». L'homme dit « je n'étais pas prêt — je me prépare pour la prochaine ». Même réalité, deux destins.</span>
+              <span class="lg-ht">Ou rate yon opòtinite ? Ti gason an di « yo pa t ede m ». Nonm lan di « mwen pa t pare — m ap prepare m pou pwochen an ». Menm reyalite, de desten.</span>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 02</span><span class="num lg-ht">Prensip 02</span>
+            <h2 class="lg-fr">La parole donnée</h2>
+            <h2 class="lg-ht">Pawòl ou bay</h2>
+            <p class="lg-fr">La parole d'un homme est un contrat. Tu as dit 18 h ? Tu es là à 18 h. Tu as promis d'aider ? Tu aides. Les gens finissent par savoir une chose sur toi : <b>quand tu parles, c'est fait</b>. Cette réputation vaut plus que n'importe quel discours — et elle se construit un engagement tenu à la fois.</p>
+            <p class="lg-ht">Pawòl yon nonm se yon kontra. Ou te di 6 è ? Ou la a 6 è. Ou te pwomèt ede ? Ou ede. Moun fini pa konnen yon bagay sou ou : <b>lè w pale, se fèt</b>. Repitasyon sa a vo plis pase nenpòt diskou — epi li konstwi yon angajman kenbe alafwa.</p>
+            <p class="lg-fr">Corollaire : ne promets pas ce que tu ne tiendras pas. Dire « je vais voir » quand tu sais que c'est non, c'est déjà mentir. Un homme préfère un « non » propre à un « oui » pourri.</p>
+            <p class="lg-ht">Korolè : pa pwomèt sa ou p ap kenbe. Di « m ap wè » lè w konnen se non, se deja manti. Yon nonm prefere yon « non » pwòp pase yon « wi » pouri.</p>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 03</span><span class="num lg-ht">Prensip 03</span>
+            <h2 class="lg-fr">Le contrôle des émotions</h2>
+            <h2 class="lg-ht">Kontwòl emosyon</h2>
+            <p class="lg-fr">Contrôler ses émotions ne veut pas dire ne rien ressentir. Ça veut dire : <b>ressentir sans obéir</b>. La colère monte ? Tu la sens — mais c'est toi qui décides de la réponse, pas elle. Un garçon explose, insulte, claque la porte, puis regrette. Un homme respire, attend, et répond au niveau du problème, pas au niveau de son humeur.</p>
+            <p class="lg-ht">Kontwole emosyon w pa vle di pa santi anyen. Sa vle di : <b>santi san w pa obeyi</b>. Kòlè a monte ? Ou santi l — men se ou ki deside repons lan, pa li. Yon ti gason eksploze, jouse, frape pòt, epi apre li regrèt. Yon nonm respire, li tann, epi li reponn nan nivo pwoblèm lan, pa nan nivo imè l.</p>
+            <div class="example">
+              <b class="lg-fr">La règle des 10 secondes</b><b class="lg-ht">Règ 10 segonn lan</b>
+              <span class="lg-fr">Provoqué ? Compte jusqu'à dix avant de parler. La plupart des dégâts d'une vie se font dans les trois premières secondes d'une émotion. Celui qui maîtrise ces dix secondes maîtrise la pièce.</span>
+              <span class="lg-ht">Yo pwovoke w ? Konte jis dis anvan w pale. Pifò domaj nan yon lavi fèt nan twa premye segonn yon emosyon. Moun ki metrize dis segonn sa yo metrize chanm lan.</span>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 04</span><span class="num lg-ht">Prensip 04</span>
+            <h2 class="lg-fr">Prendre soin des siens</h2>
+            <h2 class="lg-ht">Pran swen moun pa w yo</h2>
+            <p class="lg-fr">La force d'un homme se mesure à ce qu'il protège. Ta famille, ta mère, tes enfants, ta parole envers ceux qui comptent sur toi. Un garçon consomme : il prend du temps, de l'argent, de l'attention. Un homme <b>produit et protège</b> : il apporte la sécurité, la stabilité, la présence.</p>
+            <p class="lg-ht">Fòs yon nonm mezire nan sa li pwoteje. Fanmi w, manman w, pitit ou, pawòl ou anve moun ki konte sou ou. Yon ti gason konsome : li pran tan, lajan, atansyon. Yon nonm <b>pwodwi epi li pwoteje</b> : li pote sekirite, estabilite, presans.</p>
+            <p class="lg-fr">Prendre soin des siens, ce n'est pas seulement payer des factures. C'est être là, écouter, rester calme quand tout le monde panique. Le pilier ne crie pas : il tient.</p>
+            <p class="lg-ht">Pran swen moun pa w, se pa sèlman peye bòdwo. Se la, koute, rete kalm lè tout moun ap panike. Poto a pa rele : li kenbe.</p>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 05</span><span class="num lg-ht">Prensip 05</span>
+            <h2 class="lg-fr">Zéro excuse</h2>
+            <h2 class="lg-ht">Zewo eskiz</h2>
+            <p class="lg-fr">Les excuses sont confortables et stériles. « Je n'ai pas le temps » veut souvent dire « ce n'est pas ma priorité ». « C'est trop dur » veut dire « je n'ai pas encore commencé assez longtemps ». Un homme remplace les excuses par des <b>constats et des plans</b> : voilà où j'en suis, voilà ce que je fais demain matin à 6 h.</p>
+            <p class="lg-ht">Eskiz konfòtab epi yo pa pwodwi anyen. « Mwen pa gen tan » souvan vle di « se pa priyorite m ». « Se twò di » vle di « mwen poko kòmanse ase lontan ». Yon nonm ranplase eskiz ak <b>konsta ak plan</b> : men kote m ye, men sa m ap fè demen maten a 6 è.</p>
+            <div class="example">
+              <b class="lg-fr">À retenir</b><b class="lg-ht">Sa pou w kenbe</b>
+              <span class="lg-fr">Nobody is coming to save you — personne ne viendra te sauver. Bonne nouvelle : tu n'en as pas besoin. Tu as deux mains, un cerveau et 24 heures, comme tout le monde.</span>
+              <span class="lg-ht">Pèsonn pap vini sove w. Bon nouvèl : ou pa bezwen sa. Ou gen de men, yon sèvo ak 24 èdtan, tankou tout moun.</span>
+            </div>
+          </div>
+
+          <div class="mantra">
+            <span class="lg-fr">« Un garçon demande. Un homme assume. »</span>
+            <span class="lg-ht">« Yon ti gason mande. Yon nonm asime. »</span>
+            <small class="lg-fr">Prochaine étape : fixer les standards qui protègent cette version de toi.</small>
+            <small class="lg-ht">Pwochen etap : fikse estanda ki pwoteje vèsyon sa a de ou menm.</small>
+          </div>
+          <div class="endcta">
+            <h2 class="lg-fr">Prochain pilier : Tes standards</h2>
+            <h2 class="lg-ht">Pwochen poto : Estanda w yo</h2>
+            <p class="lg-fr">Tu sais qui tu veux être. Maintenant, définis ce que tu acceptes — et ce que tu refuses — dans ta vie.</p>
+            <p class="lg-ht">Ou konnen ki moun ou vle ye. Kounye a, defini sa w aksepte — ak sa w refize — nan lavi w.</p>
+            <div class="cta-row">
+              <a class="btn gold" href="#/standards"><span class="lg-fr">Continuer →</span><span class="lg-ht">Kontinye →</span></a>
+            </div>
+          </div>
+        </div></div>
+      </section>
+
+      <!-- ============================= STANDARDS ============================= -->
+      <section class="page" data-page="standards">
+        <div class="pagehead">
+          <img class="bgimg" src="assets/standards-gatsby.jpg" alt="Homme en smoking levant une coupe, fond noir" />
+          <div class="wrap"><div class="inner">
+            <p class="crumb"><a href="#/home"><span class="lg-fr">← Tous les piliers</span><span class="lg-ht">← Tout poto yo</span></a></p>
+            <span class="kicker lg-fr">Module gratuit · Pilier 3</span>
+            <span class="kicker lg-ht">Modil gratis · Poto 3</span>
+            <h1 class="lg-fr">Tes standards</h1>
+            <h1 class="lg-ht">Estanda w yo</h1>
+            <p class="sub lg-fr">On n'obtient pas ce qu'on mérite dans la vie. On obtient ce qu'on tolère. Tes standards sont la frontière entre les deux.</p>
+            <p class="sub lg-ht">Nan lavi, ou pa jwenn sa w merite. Ou jwenn sa w tolere. Estanda w yo se fwontyè ant de sa yo.</p>
+          </div></div>
+        </div>
+        <div class="wrap"><div class="lessons">
+          <div class="mantra" style="margin-top:0">
+            <span class="lg-fr">« Tes standards, c'est ce que tu tolères. »</span>
+            <span class="lg-ht">« Estanda w, se sa w tolere. »</span>
+            <small class="lg-fr">Chaque chose que tu laisses passer envoie un message — aux autres, et à toi-même.</small>
+            <small class="lg-ht">Chak bagay ou kite pase voye yon mesaj — bay lòt moun, epi ba ou menm.</small>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 01</span><span class="num lg-ht">Prensip 01</span>
+            <h2 class="lg-fr">Ne jamais accepter moins que ce que tu mérites</h2>
+            <h2 class="lg-ht">Pa janm aksepte mwens pase sa w merite</h2>
+            <p class="lg-fr">Attention : « ce que tu mérites » se construit, il ne se décrète pas. Tu mérites le respect — si tu te respectes. Tu mérites mieux payé — si ta compétence le justifie. Le standard n'est pas de l'arrogance : c'est un <b>contrat entre toi et toi</b>. Tu montes ton niveau, puis tu refuses de redescendre en dessous.</p>
+            <p class="lg-ht">Atansyon : « sa w merite » konstwi, li pa dekrete. Ou merite respè — si w respekte tèt ou. Ou merite pi bon salè — si konpetans ou jistifye l. Estanda se pa awogans : se yon <b>kontra ant ou menm ak ou menm</b>. Ou monte nivo w, epi ou refize desann anba l.</p>
+            <div class="example">
+              <b class="lg-fr">Exemple</b><b class="lg-ht">Egzanp</b>
+              <span class="lg-fr">Quelqu'un te parle avec mépris « pour rire » ? Un homme sans standards encaisse et sourit. Un homme avec des standards répond calmement, une fois : « Avec moi, on ne parle pas comme ça. » Puis il observe. Si ça recommence, il s'éloigne. Sans drame.</span>
+              <span class="lg-ht">Yon moun pale w ak mepri « pou ri » ? Yon nonm san estanda pran l epi li souri. Yon nonm ak estanda reponn kalm, yon fwa : « Avè m, yo pa pale konsa. » Apre li obsève. Si sa rekòmanse, li elwaye. San dram.</span>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 02</span><span class="num lg-ht">Prensip 02</span>
+            <h2 class="lg-fr">Savoir dire non</h2>
+            <h2 class="lg-ht">Konn di non</h2>
+            <p class="lg-fr">Chaque « oui » forcé est un « non » à tes propres priorités. L'homme qui dit oui à tout le monde finit par ne plus rien valoir pour personne — y compris pour lui-même. Dire non n'est pas être méchant : c'est être <b>clair</b>. « Non, je ne peux pas. » Point. Pas besoin d'un roman d'excuses : la justification excessive est une demande de permission déguisée.</p>
+            <p class="lg-ht">Chak « wi » fòse se yon « non » pou priyorite pa w yo. Gason ki di wi tout moun fini pa pa vo anyen pou pèsonn — enkli pou tèt li. Di non se pa mechanste : se <b>klè</b>. « Non, mwen pa kapab. » Pwen. Pa bezwen yon woman eskiz : jistifikasyon depase se yon demann pèmisyon degize.</p>
+            <div class="example">
+              <b class="lg-fr">Les trois non</b><b class="lg-ht">Twa non yo</b>
+              <span class="lg-fr">Non à ce qui te tire vers le bas (habitudes, sorties, dettes inutiles). Non à ce qui ne respecte pas ton temps. Non à ce que tu acceptais « pour faire plaisir » alors que ça te coûtait ta paix.</span>
+              <span class="lg-ht">Non ak sa k ap tire w anba (abitud, sòti, dèt initil). Non ak sa ki pa respekte tan w. Non ak sa w te konn aksepte « pou fè plezi » pandan l ap koute w lapè w.</span>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 03</span><span class="num lg-ht">Prensip 03</span>
+            <h2 class="lg-fr">Bien s'entourer</h2>
+            <h2 class="lg-ht">Antoure w byen</h2>
+            <p class="lg-fr">Tu deviens la moyenne des gens que tu fréquentes — ce n'est pas un proverbe, c'est un mécanisme. Si ton cercle passe ses journées à se plaindre, boire et critiquer ceux qui avancent, tu finiras par leur ressembler, même avec la meilleure volonté du monde. Cherche des hommes qui <b>construisent</b> : un projet, un corps, une famille, un commerce. L'énergie est contagieuse dans les deux sens.</p>
+            <p class="lg-ht">Ou vin mwayèn moun ou frekante yo — se pa yon pwovèb, se yon mekanis. Si sèk ou a pase jounen l ap plenyen, bwè epi kritike moun k ap avanse, ou ap fini pa sanble yo, menm ak pi bon volonte nan mond lan. Chèche gason k ap <b>konstwi</b> : yon pwojè, yon kò, yon fanmi, yon komès. Enèji kontajye nan de sans yo.</p>
+            <p class="lg-fr">Et sois honnête : certains amis d'enfance doivent rester des souvenirs. Les quitter n'est pas les trahir — c'est refuser de couler avec le bateau.</p>
+            <p class="lg-ht">Epi se onèt : kèk zanmi danfans dwe rete souvni. Kite yo se pa trayi yo — se refize koule ak bato a.</p>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 04</span><span class="num lg-ht">Prensip 04</span>
+            <h2 class="lg-fr">L'hygiène de vie : sport, sommeil, apparence</h2>
+            <h2 class="lg-ht">Ijyèn lavi : espò, somèy, aparans</h2>
+            <p class="lg-fr">Ton corps est ta première carte de visite — avant que tu ouvres la bouche, il a déjà parlé. <b>Sport</b> : 3 à 4 séances par semaine, même simples (pompes, squats, marche rapide). <b>Sommeil</b> : 7 heures, c'est le socle de ton humeur, de ta voix, de tes décisions. <b>Apparence</b> : propre, soigné, des vêtements qui te vont. Pas besoin de luxe : besoin de soin.</p>
+            <p class="lg-ht">Kò w se premye kat vizit ou — anvan w louvri bouch ou, li pale deja. <b>Espò</b> : 3 a 4 sesyon pa semèn, menm si yo senp (ponp, skwat, mache rapid). <b>Somèy</b> : 7 èdtan, se baz imè w, vwa w, desizyon w. <b>Aparans</b> : pwòp, byen swen, rad ki chita sou ou. Ou pa bezwen liks : ou bezwen swen.</p>
+            <div class="example">
+              <b class="lg-fr">Le standard minimum</b><b class="lg-ht">Estanda minimòm lan</b>
+              <span class="lg-fr">Ongles propres, haleine fraîche, chaussures propres, dos droit. Quatre détails gratuits qui séparent immédiatement l'homme qui se tient de celui qui se laisse aller.</span>
+              <span class="lg-ht">Zong pwòp, alèn fre, soulye pwòp, do dwat. Kat detay gratis ki separe imedyatman nonm ki kenbe tèt li ak sila k ap lage kò l.</span>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 05</span><span class="num lg-ht">Prensip 05</span>
+            <h2 class="lg-fr">Ton temps est non négociable</h2>
+            <h2 class="lg-ht">Tan w pa negosyab</h2>
+            <p class="lg-fr">L'argent perdu se regagne. Le temps perdu, jamais. Un homme à standards protège ses heures comme son portefeuille : il sait ce que vaut une soirée passée à scroller, une relation qui ne mène nulle part, une discussion stérile. Pose-toi la question chaque semaine : « Où est parti mon temps ? » La réponse dessine ta vraie vie — pas celle que tu racontes.</p>
+            <p class="lg-ht">Lajan pèdi ka reganye. Tan pèdi, janm. Yon nonm ak estande pwoteje èdtan l tankou bous li : li konnen sa yon sware pase ap skwole vo, yon relasyon ki pa mennen okenn kote, yon diskisyon ki pa pwodwi anyen. Poze tèt ou kesyon an chak semèn : « Ki kote tan m pase ? » Repons lan desine vrè lavi w — pa sa w rakonte a.</p>
+          </div>
+
+          <div class="mantra">
+            <span class="lg-fr">« Élève ton standard, et ta vie suivra. »</span>
+            <span class="lg-ht">« Monte estanda w, epi lavi w ap suiv. »</span>
+            <small class="lg-fr">Prochaine étape : la parole — ton arme la plus visible.</small>
+            <small class="lg-ht">Pwochen etap : pawòl la — zam ou ki pi vizib.</small>
+          </div>
+          <div class="endcta">
+            <h2 class="lg-fr">Prochain pilier : L'art de parler</h2>
+            <h2 class="lg-ht">Pwochen poto : Atizay pale</h2>
+            <p class="lg-fr">Tes standards définissent ce que tu tolères. Ta parole définit ce que le monde retient de toi.</p>
+            <p class="lg-ht">Estanda w yo defini sa w tolere. Pawòl ou defini sa mond lan kenbe de ou.</p>
+            <div class="cta-row">
+              <a class="btn gold" href="#/parler"><span class="lg-fr">Continuer →</span><span class="lg-ht">Kontinye →</span></a>
+            </div>
+          </div>
+        </div></div>
+      </section>
+
+      <!-- ============================= PARLER ============================= -->
+      <section class="page" data-page="parler">
+        <div class="pagehead">
+          <img class="bgimg" src="assets/parler-rose.jpg" alt="Homme au chapeau blanc tenant une rose rouge, noir et blanc" />
+          <div class="wrap"><div class="inner">
+            <p class="crumb"><a href="#/home"><span class="lg-fr">← Tous les piliers</span><span class="lg-ht">← Tout poto yo</span></a></p>
+            <span class="kicker lg-fr">Module gratuit · Pilier 4</span>
+            <span class="kicker lg-ht">Modil gratis · Poto 4</span>
+            <h1 class="lg-fr">L'art de parler</h1>
+            <h1 class="lg-ht">Atizay pale</h1>
+            <p class="sub lg-fr">N'importe qui peut parler. Peu d'hommes savent le faire de manière à être écoutés, respectés et retenus. C'est un entraînement, pas un don.</p>
+            <p class="sub lg-ht">Nenpòt moun ka pale. Kèk gason sèlman konn fè l yon fason pou moun koute yo, respekte yo epi sonje yo. Se yon antrènman, se pa yon don.</p>
+          </div></div>
+        </div>
+        <div class="wrap"><div class="lessons">
+          <div class="principle">
+            <span class="num lg-fr">Principe 01</span><span class="num lg-ht">Prensip 01</span>
+            <h2 class="lg-fr">Parle lentement</h2>
+            <h2 class="lg-ht">Pale dousman</h2>
+            <p class="lg-fr">La vitesse trahit le stress. L'homme pressé de finir sa phrase a peur qu'on l'arrête — et tout le monde le sent. Ralentis de 20 % : tes mots gagnent du poids, ton interlocuteur a le temps de les recevoir, et toi, le temps de choisir les bons. <b>Le silence entre tes phrases n'est pas un vide : c'est de l'autorité.</b></p>
+            <p class="lg-ht">Vitès trayi estrès. Gason ki prese fini fraz li pè pou moun pa kanpe l — epi tout moun santi sa. Ralanti de 20 % : mo w yo pran pwa, moun k ap koute w la gen tan resevwa yo, epi ou menm, ou gen tan chwazi bon mo yo. <b>Silans ant fraz ou yo se pa yon vid : se otorite.</b></p>
+            <div class="example">
+              <b class="lg-fr">Entraînement</b><b class="lg-ht">Antrènman</b>
+              <span class="lg-fr">Enregistre-toi en train de lire un texte à voix haute. Écoute : si tu te trouves rapide, tu l'es encore plus en vrai. Refais-le en respirant à chaque ponctuation.</span>
+              <span class="lg-ht">Anrejistre w ap li yon tèks ak vwa wo. Koute : si w jwenn ou rapid, an reyalite ou pi rapid toujou. Refè l pandan w respire nan chak ponktiyasyon.</span>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 02</span><span class="num lg-ht">Prensip 02</span>
+            <h2 class="lg-fr">Une voix posée</h2>
+            <h2 class="lg-ht">Yon vwa poze</h2>
+            <p class="lg-fr">Tu n'as pas besoin d'une voix grave de naissance : tu as besoin d'une voix <b>stable</b>. Respire par le ventre, parle sur l'expiration, termine tes phrases en descendant légèrement — pas en montant comme une question. L'homme qui crie pour se faire entendre annonce qu'il n'a pas d'autre pouvoir. Celui qui parle calmement au milieu du bruit devient le centre de gravité de la pièce.</p>
+            <p class="lg-ht">Ou pa bezwen yon vwa grav depi w fèt : ou bezwen yon vwa <b>stab</b>. Respire ak vant ou, pale sou ekspirasyon an, fini fraz ou yo pandan w desann yon ti kras — pa monte tankou yon kesyon. Gason ki rele pou moun tande l anonse li pa gen lòt pouvwa. Sila ki pale kalm nan mitan bri a vin sant gravite chanm lan.</p>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 03</span><span class="num lg-ht">Prensip 03</span>
+            <h2 class="lg-fr">Écoute plus que tu ne parles</h2>
+            <h2 class="lg-ht">Koute plis pase w pale</h2>
+            <p class="lg-fr">La règle : <b>70 % d'écoute, 30 % de parole</b>. Pas seulement attendre ton tour — écouter vraiment : retenir les détails, poser la question qui prouve que tu as compris, ne pas couper. Les gens oublient ce que tu as dit d'intelligent ; ils n'oublient jamais comment tu les as fait se sentir écoutés. Et bonus : en écoutant, tu apprends tout ce que les autres révèlent d'eux-mêmes sans s'en rendre compte.</p>
+            <p class="lg-ht">Règ la : <b>70 % koute, 30 % pale</b>. Pa sèlman tann tou pa w — koute vrèman : kenbe detay yo, poze kesyon ki pwouve ou konprann, pa koupe moun. Moun bliye sa w te di ki entelijan ; yo pa janm bliye jan w te fè yo santi w ap koute yo. Epi bonis : pandan w ap koute, ou aprann tout sa lòt moun revele sou tèt yo san yo pa rann yo kont.</p>
+            <div class="example">
+              <b class="lg-fr">La question qui change tout</b><b class="lg-ht">Kesyon ki chanje tout bagay</b>
+              <span class="lg-fr">Au lieu de préparer ta réponse pendant que l'autre parle, demande : « Et ça t'a fait quoi, ça ? » — puis tais-toi. La conversation vient de passer à un autre niveau.</span>
+              <span class="lg-ht">Olye w prepare repons ou pandan lòt la ap pale, mande : « Epi sa, kijan sa te fè w santi w ? » — epi pe bouch ou. Konvèsasyon an sot pase nan yon lòt nivo.</span>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 04</span><span class="num lg-ht">Prensip 04</span>
+            <h2 class="lg-fr">Ne te justifie pas trop</h2>
+            <h2 class="lg-ht">Pa jistifye w twòp</h2>
+            <p class="lg-fr">Expliquer une décision une fois, c'est de la clarté. L'expliquer cinq fois avec dix détails, c'est demander la permission de l'avoir prise. Les hommes respectés donnent des <b>raisons courtes</b> et assument la suite : « J'ai décidé comme ça. » « Ça ne me convient pas. » « Je ne serai pas là. » Plus tu justifies, plus ton « non » a l'air négociable.</p>
+            <p class="lg-ht">Eksplike yon desizyon yon fwa, se klète. Eksplike l senk fwa ak dis detay, se mande pèmisyon pou w te pran l. Gason yo respekte bay <b>rezon kout</b> epi yo asime rès la : « Mwen deside konsa. » « Sa pa bon pou mwen. » « Mwen p ap la. » Plis ou jistifye, plis « non » w lan sanble negosyab.</p>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Principe 05</span><span class="num lg-ht">Prensip 05</span>
+            <h2 class="lg-fr">L'humour mesuré</h2>
+            <h2 class="lg-ht">Imou mezire</h2>
+            <p class="lg-fr">L'humour est un signe d'intelligence et de détente — à dose maîtrisée. Le clown de service rit de tout, tout le temps, surtout de lui-même : il achète l'attention au prix du respect. L'homme posé sourit souvent, rit parfois, et place <b>une</b> remarque juste au bon moment. Vise sec, jamais blessant, jamais désespéré d'être drôle.</p>
+            <p class="lg-ht">Imou se yon siy entelijans ak detant — nan dòz metrize. Kloun sèvis la ri tout bagay, toutan, sitou de tèt li : li achte atansyon ak pri respè a. Nonm poze a souri souvan, li ri pafwa, epi li plase <b>yon</b> remak jis nan bon moman an. Vize sèk, pa janm blesan, pa janm dezespere pou w komik.</p>
+            <div class="example">
+              <b class="lg-fr">À retenir</b><b class="lg-ht">Sa pou w kenbe</b>
+              <span class="lg-fr">On retient l'homme dont chaque phrase compte. Parle moins, parle mieux, et laisse les autres se demander ce que tu penses — c'est ça, la présence.</span>
+              <span class="lg-ht">Moun sonje nonm chak fraz li konte. Pale mwens, pale pi byen, epi kite lòt moun ap mande sa w panse — se sa presans lan ye.</span>
+            </div>
+          </div>
+
+          <div class="mantra">
+            <span class="lg-fr">« Celui qui maîtrise sa parole maîtrise la pièce. »</span>
+            <span class="lg-ht">« Moun ki metrize pawòl li metrize chanm lan. »</span>
+            <small class="lg-fr">Tu as les fondations gratuites. Les modules premium appliquent tout ça aux conversations avec les femmes — téléphone et face à face.</small>
+            <small class="lg-ht">Ou gen fondasyon gratis yo. Modil premium yo aplike tout sa nan konvèsasyon ak fanm — telefòn ak fasafas.</small>
+          </div>
+          <div class="endcta">
+            <h2 class="lg-fr">Prêt pour les techniques avancées ?</h2>
+            <h2 class="lg-ht">Èske w pare pou teknik avanse yo ?</h2>
+            <p class="lg-fr">Koze ak fanm, au téléphone ou face à face : c'est là que la parole devient résultat. Intros gratuites, techniques complètes en premium.</p>
+            <p class="lg-ht">Koze ak fanm, nan telefòn oswa fasafas : se la pawòl la vin rezilta. Entwo gratis, teknik konplè an premium.</p>
+            <div class="cta-row">
+              <a class="btn gold" href="#/telephone"><span class="lg-fr">Module Téléphone →</span><span class="lg-ht">Modil Telefòn →</span></a>
+              <a class="btn dark" href="#/face"><span class="lg-fr">Module Fasafas →</span><span class="lg-ht">Modil Fasafas →</span></a>
+            </div>
+          </div>
+        </div></div>
+      </section>
+
+      <!-- ============================= TÉLÉPHONE (PREMIUM) ============================= -->
+      <section class="page" data-page="telephone">
+        <div class="pagehead">
+          <img class="bgimg" src="assets/femme-telephone-couple.jpg" alt="Un couple élégant se tenant la main dans un champ au coucher du soleil" />
+          <div class="wrap"><div class="inner">
+            <p class="crumb"><a href="#/home"><span class="lg-fr">← Tous les piliers</span><span class="lg-ht">← Tout poto yo</span></a></p>
+            <span class="kicker lg-fr">Module premium · Pilier 5 — intro gratuite</span>
+            <span class="kicker lg-ht">Modil premium · Poto 5 — entwo gratis</span>
+            <h1 class="lg-fr">Koze ak fanm — nan telefòn</h1>
+            <h1 class="lg-ht">Koze ak fanm — nan telefòn</h1>
+            <p class="sub lg-fr">Le téléphone est le premier terrain où tout se gagne ou se perd. Commence par corriger les erreurs qui détruisent ton image avant même le premier rendez-vous.</p>
+            <p class="sub lg-ht">Telefòn lan se premye teren kote tout bagay ganye oswa pèdi. Kòmanse pa korije erè ki detwi imaj ou anvan menm premye randevou a.</p>
+          </div></div>
+        </div>
+        <div class="wrap"><div class="lessons">
+          <div class="principle">
+            <span class="num lg-fr">Intro · Erreur 01</span><span class="num lg-ht">Entwo · Erè 01</span>
+            <h2 class="lg-fr">Le « cc ça va ? » en boucle</h2>
+            <h2 class="lg-ht">« Cc ça va ? » an bouk</h2>
+            <p class="lg-fr">« Cc ça va ? » — « cv et toi » — « tu fais quoi » — « ok ». Si cette conversation te dit quelque chose, tu sais déjà comment elle finit : dans l'oubli. Ce type de message ne dit rien de toi, ne crée rien, ne mène nulle part. Une femme intéressante reçoit dix conversations comme ça par jour. <b>Un message d'homme a une substance</b> : une remarque sur quelque chose de précis, une idée, une proposition. Pas un bruit de fond.</p>
+            <p class="lg-ht">« Cc ça va ? » — « cv et toi » — « tu fais quoi » — « ok ». Si konvèsasyon sa a pale w, ou konnen deja kijan li fini : nan bliye. Jan de mesaj sa a pa di anyen sou ou, li pa kreye anyen, li pa mennen okenn kote. Yon fanm enteresan resevwa dis konvèsasyon konsa pa jou. <b>Mesaj yon nonm gen sibstans</b> : yon remak sou yon bagay presi, yon lide, yon pwopozisyon. Pa yon bri fon.</p>
+            <div class="example">
+              <b class="lg-fr">La différence</b><b class="lg-ht">Diferans lan</b>
+              <span class="lg-fr">Garçon : « cc » (jour 1), « cc » (jour 2), « pourquoi tu réponds pas » (jour 3). Homme : un message qui vaut la peine d'être lu, envoyé par quelqu'un qui a une vie remplie — puis il retourne à sa vie.</span>
+              <span class="lg-ht">Ti gason : « cc » (jou 1), « cc » (jou 2), « poukisa w pa reponn » (jou 3). Nonm : yon mesaj ki vo lapèn pou moun li, yon moun ki gen yon lavi plen voye l — epi li retounen nan lavi l.</span>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Intro · Erreur 02</span><span class="num lg-ht">Entwo · Erè 02</span>
+            <h2 class="lg-fr">Répondre en 2 secondes, à tout, tout le temps</h2>
+            <h2 class="lg-ht">Reponn nan 2 segonn, tout bagay, toutan</h2>
+            <p class="lg-fr">Ce n'est pas un jeu : c'est un signal. Si tu réponds instantanément à chaque message, à toute heure, le message caché est simple — <b>« je n'ai rien d'autre dans ma vie »</b>. Un homme occupé par sa mission ne surveille pas son téléphone comme un gardien. Il répond quand il est disponible, avec la même qualité d'attention, ni plus ni moins. La constance bat la disponibilité totale.</p>
+            <p class="lg-ht">Se pa yon jwèt : se yon siyal. Si w reponn imedyatman chak mesaj, a tout lè, mesaj kache a senp — <b>« mwen pa gen anyen lòt nan lavi m »</b>. Yon nonm ki okipe ak misyon l pa veye telefòn li tankou yon gadyen. Li reponn lè li disponib, ak menm kalite atansyon an, ni plis ni mwens. Konstans bat disponiblite total.</p>
+            <p class="lg-fr">Et l'inverse est vrai aussi : si elle met du temps, tu ne commentes pas, tu ne te plains pas, tu ne doubles pas les messages. Tu as une vie — retournes-y.</p>
+            <p class="lg-ht">Epi envès la vrè tou : si li pran tan, ou pa komante, ou pa plenyen, ou pa double mesaj yo. Ou gen yon lavi — retounen ladan l.</p>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Intro · Erreur 03</span><span class="num lg-ht">Entwo · Erè 03</span>
+            <h2 class="lg-fr">Tourner en rond au lieu d'avancer</h2>
+            <h2 class="lg-ht">Vire an won olye w avanse</h2>
+            <p class="lg-fr">Trois semaines de messages sans jamais proposer de se voir, c'est de l'amitié par correspondance — pas de la séduction. L'homme sait pourquoi il parle : pour <b>créer un moment réel</b>. Quand l'échange est bon, il propose : un lieu, une idée simple, une date approximative. Pas de pression, pas de supplication : une proposition claire, qu'elle peut accepter ou non. Respecter son « non » fait aussi partie du niveau.</p>
+            <p class="lg-ht">Twa semèn mesaj san w pa janm pwopoze pou nou wè, se amitye pa korespondans — se pa seduksyon. Nonm lan konnen poukisa l ap pale : pou <b>kreye yon moman reyèl</b>. Lè echanj la bon, li pwopoze : yon kote, yon lide senp, yon dat apwoksimatif. Pa gen presyon, pa gen siplikasyon : yon pwopozisyon klè, li ka aksepte oswa non. Respekte « non » li fè pati nivo a tou.</p>
+          </div>
+
+          <div class="sec-head" style="margin:30px 0 6px">
+            <h2 class="lg-fr" style="font-size:24px">La suite complète est <span style="color:var(--gold)">verrouillée</span></h2>
+            <h2 class="lg-ht" style="font-size:24px">Rès konplè a <span style="color:var(--gold)">verouye</span></h2>
+            <p class="lg-fr">Ces trois modules contiennent les techniques exactes : timing, structure, phrases. 300 G le module — déblocage sur WhatsApp après paiement MonCash ou Binance.</p>
+            <p class="lg-ht">Twa modil sa yo gen teknik egzak yo : tayming, estrikti, fraz. 300 G modil la — deblokaj sou WhatsApp apre peman MonCash oswa Binance.</p>
+          </div>
+
+          <div class="locked-card">
+            <span class="lockbadge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <span class="num lg-fr">Module premium · 01</span><span class="num lg-ht">Modil premium · 01</span>
+            <h2 class="lg-fr">Quand appeler, quand texter</h2>
+            <h2 class="lg-ht">Ki lè pou w rele, ki lè pou w ekri</h2>
+            <p class="teaser lg-fr">Le texte sert à une chose, l'appel à une autre — et confondre les deux te coûte cher. Le module donne la règle de décision complète : les moments où un appel crée une connexion que 100 messages ne créeront jamais, les heures à éviter, et le timing exact du premier appel.</p>
+            <p class="teaser lg-ht">Mesaj sèvi pou yon bagay, apèl pou yon lòt — epi konfonn de yo koute w chè. Modil la bay règ desizyon konplè a : moman yon apèl kreye yon koneksyon 100 mesaj pap janm kreye, lè pou w evite, epi tayming egzak premye apèl la.</p>
+            <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <div class="unlock">
+              <a class="btn gold" data-wa="tel" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
+              <span class="prix-note">300 G · MonCash / Binance</span>
+            </div>
+          </div>
+
+          <div class="locked-card">
+            <span class="lockbadge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <span class="num lg-fr">Module premium · 02</span><span class="num lg-ht">Modil premium · 02</span>
+            <h2 class="lg-fr">Quoi dire au téléphone</h2>
+            <h2 class="lg-ht">Sa pou w di nan telefòn</h2>
+            <p class="teaser lg-fr">La structure complète d'un appel qui marque : comment ouvrir sans gêne, les sujets qui créent de la complicité, les erreurs de ton qui tuent l'attirance, comment utiliser les silences — et comment terminer l'appel au bon moment, en laissant l'envie de recommencer.</p>
+            <p class="teaser lg-ht">Estrikti konplè yon apèl ki make : kijan pou w louvri san jèn, sijè ki kreye konplisite, erè ton ki touye atirans, kijan pou w itilize silans yo — epi kijan pou w fini apèl la nan bon moman an, pandan w kite anvi rekòmanse.</p>
+            <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <div class="unlock">
+              <a class="btn gold" data-wa="tel" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
+              <span class="prix-note">300 G · MonCash / Binance</span>
+            </div>
+          </div>
+
+          <div class="locked-card">
+            <span class="lockbadge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <span class="num lg-fr">Module premium · 03</span><span class="num lg-ht">Modil premium · 03</span>
+            <h2 class="lg-fr">Le rythme des messages</h2>
+            <h2 class="lg-ht">Ritm mesaj yo</h2>
+            <p class="teaser lg-fr">Ni fantôme, ni mitraillette. Le rythme exact à tenir selon l'étape où vous en êtes : début, installation, avant le rendez-vous. Avec les réponses types aux situations qui déstabilisent tout le monde — message vu sans réponse, réponse froide, test déguisé.</p>
+            <p class="teaser lg-ht">Ni fantom, ni mitrayèt. Ritm egzak pou w kenbe selon etap nou ye a : kòmansman, enstalasyon, anvan randevou a. Ak repons tip pou sitiyasyon ki destabilize tout moun — mesaj li wè san repons, repons fwèt, tès degize.</p>
+            <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <div class="unlock">
+              <a class="btn gold" data-wa="tel" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
+              <span class="prix-note">300 G · MonCash / Binance</span>
+            </div>
+          </div>
+
+          <div class="paybox">
+            <div class="row"><b>MonCash</b><span>+509 34 97 9011 — Nom : Faub*** Fabio***</span></div>
+            <div class="row"><b>Binance Pay</b><span>ID : 1253095098</span></div>
+            <div class="row"><b class="lg-fr">Comment ça marche</b><b class="lg-ht">Kijan sa mache</b><span class="lg-fr">Tu paies, tu cliques « Débloquer », tu envoies ta preuve de paiement sur WhatsApp — ton module est activé.</span><span class="lg-ht">Ou peye, ou klike « Debloke », ou voye prèv peman w sou WhatsApp — modil ou a aktive.</span></div>
+          </div>
+
+          <div class="endcta">
+            <h2 class="lg-fr">Les deux modules pour 750 G</h2>
+            <h2 class="lg-ht">De modil yo pou 750 G</h2>
+            <p class="lg-fr">Téléphone + Fasafas : le pack complet te donne accès aux deux univers — ce qui se joue à distance, et ce qui se joue en présence.</p>
+            <p class="lg-ht">Telefòn + Fasafas : pak konplè a koute 750 G — aksè nan de linivè yo, telefòn AK fasafas.</p>
+            <div class="cta-row">
+              <a class="btn wa" data-wa="pack" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Prendre le pack complet — 750 G</span><span class="lg-ht">Pran pak konplè a — 750 G</span></a>
+            </div>
+          </div>
+        </div></div>
+      </section>
+
+      <!-- ============================= FACE À FACE (PREMIUM) ============================= -->
+      <section class="page" data-page="face">
+        <div class="pagehead">
+          <img class="bgimg" src="assets/femme-face-couple.jpg" alt="Un couple élégant montant un escalier de palace" />
+          <div class="wrap"><div class="inner">
+            <p class="crumb"><a href="#/home"><span class="lg-fr">← Tous les piliers</span><span class="lg-ht">← Tout poto yo</span></a></p>
+            <span class="kicker lg-fr">Module premium · Pilier 6 — intro gratuite</span>
+            <span class="kicker lg-ht">Modil premium · Poto 6 — entwo gratis</span>
+            <h1 class="lg-fr">Koze ak fanm — fasafas</h1>
+            <h1 class="lg-ht">Koze ak fanm — fasafas</h1>
+            <p class="sub lg-fr">En face à face, ton corps parle avant ta bouche. Voici les fondamentaux gratuits — puis les techniques qui transforment une conversation ordinaire en connexion réelle.</p>
+            <p class="sub lg-ht">Fasafas, kò w pale anvan bouch ou. Men fondamantal gratis yo — epi teknik ki transfòme yon konvèsasyon òdinè an vrè koneksyon.</p>
+          </div></div>
+        </div>
+        <div class="wrap"><div class="lessons">
+          <div class="principle">
+            <span class="num lg-fr">Intro · Base 01</span><span class="num lg-ht">Entwo · Baz 01</span>
+            <h2 class="lg-fr">Ton corps parle avant toi</h2>
+            <h2 class="lg-ht">Kò w pale anvan ou</h2>
+            <p class="lg-fr">Épaules tombantes, dos voûté, mains qui triturent le téléphone : avant ton premier mot, ton corps a déjà dit « je ne suis pas sûr de moi ». Le correctif est mécanique : <b>dos droit, épaules ouvertes, gestes lents, téléphone rangé</b>. Marche comme si tu savais où tu vas — parce qu'un homme qui a une direction, ça se voit de loin.</p>
+            <p class="lg-ht">Zèpol tonbe, do koube, men k ap manyen telefòn : anvan premye mo w, kò w di deja « mwen pa si de tèt mwen ». Koreksyon an mekanik : <b>do dwat, zèpol louvri, jès dousman, telefòn ranje</b>. Mache tankou w konnen ki kote w prale — paske yon nonm ki gen yon direksyon, sa wè de lwen.</p>
+            <div class="example">
+              <b class="lg-fr">Le test du couloir</b><b class="lg-ht">Tès koulwa a</b>
+              <span class="lg-fr">Filme-toi en train de marcher 10 mètres. Regarde l'homme sur la vidéo : est-ce quelqu'un que tu suivrais ? Ajuste la posture jusqu'à ce que la réponse soit oui.</span>
+              <span class="lg-ht">Filme w ap mache 10 mèt. Gade nonm ki nan videyo a : èske se yon moun ou ta suiv ? Ajiste postur ou jis repons lan se wi.</span>
+            </div>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Intro · Base 02</span><span class="num lg-ht">Entwo · Baz 02</span>
+            <h2 class="lg-fr">Le regard</h2>
+            <h2 class="lg-ht">Rega a</h2>
+            <p class="lg-fr">Éviter le regard dit « je me cache ». Le fixer sans relâche dit « je joue un rôle ». La vérité est entre les deux : <b>tiens le regard calmement pendant qu'elle parle</b>, détourne-le naturellement quand tu réfléchis, reviens-y. Un regard stable communique ce qu'aucune phrase ne peut : « je suis là, entier, sans peur. »</p>
+            <p class="lg-ht">Evite rega a di « m ap kache ». Fikse l san rete di « m ap jwe yon wòl ». Verite a nan mitan de yo : <b>kenbe rega a kalm pandan l ap pale</b>, detounen l natirèlman lè w ap reflechi, retounen ladan l. Yon rega stab kominike sa okenn fraz pa ka di : « mwen la, antye, san pè. »</p>
+          </div>
+
+          <div class="principle">
+            <span class="num lg-fr">Intro · Base 03</span><span class="num lg-ht">Entwo · Baz 03</span>
+            <h2 class="lg-fr">La présence calme</h2>
+            <h2 class="lg-ht">Presans kalm lan</h2>
+            <p class="lg-fr">L'homme nerveux remplit chaque silence, rit trop fort, bouge sans arrêt. L'homme présent fait l'inverse : il est <b>à l'aise dans les pauses</b>, il ne court pas après la conversation — il l'habite. Cette tranquillité est magnétique parce qu'elle est rare : elle dit que tu n'as rien à prouver, et c'est exactement ce qui rend les gens curieux de toi.</p>
+            <p class="lg-ht">Gason nèvè a ranpli chak silans, li ri twò fò, li bouje san rete. Nonm ki prezan an fè envès la : li <b>alèz nan poz yo</b>, li pa kouri dèyè konvèsasyon an — li abite l. Trankilite sa a maynetik paske li ra : li di ou pa gen anyen pou w pwouve, epi se egzakteman sa ki fè moun kirye de ou.</p>
+          </div>
+
+          <div class="sec-head" style="margin:30px 0 6px">
+            <h2 class="lg-fr" style="font-size:24px">La suite complète est <span style="color:var(--gold)">verrouillée</span></h2>
+            <h2 class="lg-ht" style="font-size:24px">Rès konplè a <span style="color:var(--gold)">verouye</span></h2>
+            <p class="lg-fr">Quatre modules techniques : la mécanique exacte de la confiance, de l'écoute et de la connexion. 300 G le module — déblocage sur WhatsApp après paiement MonCash ou Binance.</p>
+            <p class="lg-ht">Kat modil teknik : mekanik egzak konfyans, koute ak koneksyon. 300 G modil la — deblokaj sou WhatsApp apre peman MonCash oswa Binance.</p>
+          </div>
+
+          <div class="locked-card">
+            <span class="lockbadge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <span class="num lg-fr">Module premium · 01</span><span class="num lg-ht">Modil premium · 01</span>
+            <h2 class="lg-fr">La confiance calme</h2>
+            <h2 class="lg-ht">Konfyans kalm lan</h2>
+            <p class="teaser lg-fr">La confiance ne se joue pas, elle s'installe. Le module détaille la mécanique : comment entrer dans un lieu, occuper l'espace, gérer les premiers instants d'une rencontre et les micro-gestes qui séparent l'homme assuré de celui qui surjoue.</p>
+            <p class="teaser lg-ht">Konfyans pa jwe, li enstale. Modil la detaye mekanik la : kijan pou w antre yon kote, okipe espas la, jere premye moman yon rankont epi mikwo-jès ki separe nonm ki asire ak sila k ap jwe twòp.</p>
+            <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <div class="unlock">
+              <a class="btn gold" data-wa="face" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
+              <span class="prix-note">300 G · MonCash / Binance</span>
+            </div>
+          </div>
+
+          <div class="locked-card">
+            <span class="lockbadge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <span class="num lg-fr">Module premium · 02</span><span class="num lg-ht">Modil premium · 02</span>
+            <h2 class="lg-fr">L'écoute active</h2>
+            <h2 class="lg-ht">Koute aktiv</h2>
+            <p class="teaser lg-fr">L'arme la plus sous-estimée : faire sentir à l'autre qu'elle est vraiment entendue. Questions qui ouvrent, reformulations qui touchent juste, détails à retenir et à ressortir au bon moment — la technique complète pour qu'elle reparte en se disant « avec lui, c'est différent ».</p>
+            <p class="teaser lg-ht">Zam ki pi souzestime a : fè lòt la santi yo tande l vrèman. Kesyon ki louvri, refòmilasyon ki touche jis, detay pou w kenbe epi ressorti nan bon moman — teknik konplè a pou l pati pandan l ap di « avè l, se diferan ».</p>
+            <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <div class="unlock">
+              <a class="btn gold" data-wa="face" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
+              <span class="prix-note">300 G · MonCash / Binance</span>
+            </div>
+          </div>
+
+          <div class="locked-card">
+            <span class="lockbadge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <span class="num lg-fr">Module premium · 03</span><span class="num lg-ht">Modil premium · 03</span>
+            <h2 class="lg-fr">Connecter au lieu d'impressionner</h2>
+            <h2 class="lg-ht">Konekte olye w enpresyone</h2>
+            <p class="teaser lg-fr">Lister tes qualités, parler de ton argent, raconter tes exploits : c'est un CV, pas une connexion. Le module montre comment passer de la performance à la complicité — vulnérabilité dosée, humour partagé, sujets qui créent un « nous » au lieu de deux monologues.</p>
+            <p class="teaser lg-ht">Liste kalite w, pale lajan w, rakonte eksplwa w : se yon CV, se pa yon koneksyon. Modil la montre kijan pou w pase de pèfòmans a konplisite — vilnerabilite doze, imou pataje, sijè ki kreye yon « nou » olye de monològ.</p>
+            <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <div class="unlock">
+              <a class="btn gold" data-wa="face" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
+              <span class="prix-note">300 G · MonCash / Binance</span>
+            </div>
+          </div>
+
+          <div class="locked-card">
+            <span class="lockbadge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <span class="num lg-fr">Module premium · 04</span><span class="num lg-ht">Modil premium · 04</span>
+            <h2 class="lg-fr">Savoir partir au bon moment</h2>
+            <h2 class="lg-ht">Konn ki lè pou w pati</h2>
+            <p class="teaser lg-fr">Le geste que presque personne ne maîtrise : quitter la conversation — et la soirée — au sommet, pas à l'usure. Pourquoi partir trop tard détruit ce que tu as construit, comment lire les signaux, et les formules de sortie qui laissent une impression qui dure des jours.</p>
+            <p class="teaser lg-ht">Jès prèske pèsonn pa metrize a : kite konvèsasyon an — ak sware a — nan somè a, pa nan izi. Poukisa pati twò ta detwi sa w te konstwi, kijan pou w li siyal yo, ak fòmil sòti ki kite yon enpresyon ki dire plizyè jou.</p>
+            <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <div class="unlock">
+              <a class="btn gold" data-wa="face" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
+              <span class="prix-note">300 G · MonCash / Binance</span>
+            </div>
+          </div>
+
+          <div class="paybox">
+            <div class="row"><b>MonCash</b><span>+509 34 97 9011 — Nom : Faub*** Fabio***</span></div>
+            <div class="row"><b>Binance Pay</b><span>ID : 1253095098</span></div>
+            <div class="row"><b class="lg-fr">Comment ça marche</b><b class="lg-ht">Kijan sa mache</b><span class="lg-fr">Tu paies, tu cliques « Débloquer », tu envoies ta preuve de paiement sur WhatsApp — ton module est activé.</span><span class="lg-ht">Ou peye, ou klike « Debloke », ou voye prèv peman w sou WhatsApp — modil ou a aktive.</span></div>
+          </div>
+
+          <div class="endcta">
+            <h2 class="lg-fr">Les deux modules pour 750 G</h2>
+            <h2 class="lg-ht">De modil yo pou 750 G</h2>
+            <p class="lg-fr">Téléphone + Fasafas : le pack complet te donne accès aux deux univers — ce qui se dit à distance, et ce qui se joue en présence.</p>
+            <p class="lg-ht">Telefòn + Fasafas : pak konplè a ba w aksè nan de linivè yo — sa ki di a distans, ak sa ki jwe an presans.</p>
+            <div class="cta-row">
+              <a class="btn wa" data-wa="pack" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Prendre le pack complet — 750 G</span><span class="lg-ht">Pran pak konplè a — 750 G</span></a>
+            </div>
+          </div>
+        </div></div>
+      </section>
+    </main>
+
+    <footer class="site">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h4>SIGMA ACADÉMIE</h4>
+            <p class="lg-fr">Une académie de développement masculin, en français et en créole haïtien. Fondations gratuites, techniques premium — pour devenir un Homme, pas un garçon.</p>
+            <p class="lg-ht">Yon akademi devlopman maskilen, an fransè ak an kreyòl ayisyen. Fondasyon gratis, teknik premium — pou w vin yon Nonm, pa yon ti gason.</p>
+          </div>
+          <div>
+            <h4 class="lg-fr">Les piliers</h4>
+            <h4 class="lg-ht">Poto yo</h4>
+            <nav>
+              <a href="#/sigma"><span class="lg-fr">L'état d'esprit Sigma</span><span class="lg-ht">Lespri Sigma</span></a>
+              <a href="#/homme"><span class="lg-fr">Un Homme, pas un garçon</span><span class="lg-ht">Yon Nonm, pa yon ti gason</span></a>
+              <a href="#/standards"><span class="lg-fr">Tes standards</span><span class="lg-ht">Estanda w yo</span></a>
+              <a href="#/parler"><span class="lg-fr">L'art de parler</span><span class="lg-ht">Atizay pale</span></a>
+            </nav>
+          </div>
+          <div>
+            <h4>Premium</h4>
+            <nav>
+              <a href="#/telephone"><span class="lg-fr">Koze ak fanm — Téléphone · 300 G</span><span class="lg-ht">Koze ak fanm — Telefòn · 300 G</span></a>
+              <a href="#/face"><span class="lg-fr">Koze ak fanm — Fasafas · 300 G</span><span class="lg-ht">Koze ak fanm — Fasafas · 300 G</span></a>
+              <a href="#/home" data-goto="tarifs"><span class="lg-fr">Pack complet · 750 G</span><span class="lg-ht">Pak konplè · 750 G</span></a>
+              <a data-wa="general" href="https://wa.me/18735972113" target="_blank" rel="noopener">WhatsApp : +1 873 597 2113</a>
+            </nav>
+          </div>
+        </div>
+        <div class="sign">
+          <span>© 2026 SIGMA ACADÉMIE — <b>by Andy Swiftt · Haïti</b></span>
+          <span class="lg-fr">Deviens un Homme, pas un garçon.</span>
+          <span class="lg-ht">Vin tounen yon Nonm, pa yon ti gason.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        "use strict";
+        var WA = "https://wa.me/18735972113?text=";
+        var MESSAGES = {
+          fr: {
+            general: "Bonjour Andy, je viens de SIGMA ACADÉMIE et je veux des informations sur les modules premium.",
+            tel: "Bonjour Andy, je veux débloquer le module premium « Koze ak fanm — Téléphone » de SIGMA ACADÉMIE (300 G). Je paie via MonCash ou Binance et je t'envoie ma preuve de paiement.",
+            face: "Bonjour Andy, je veux débloquer le module premium « Koze ak fanm — Fasafas » de SIGMA ACADÉMIE (300 G). Je paie via MonCash ou Binance et je t'envoie ma preuve de paiement.",
+            pack: "Bonjour Andy, je veux le PACK COMPLET SIGMA ACADÉMIE (Téléphone + Fasafas — 750 G). Je paie via MonCash ou Binance et je t'envoie ma preuve de paiement."
+          },
+          ht: {
+            general: "Bonjou Andy, mwen soti sou SIGMA ACADÉMIE epi mwen vle enfòmasyon sou modil premium yo.",
+            tel: "Bonjou Andy, mwen vle debloke modil premium « Koze ak fanm — Telefòn » nan SIGMA ACADÉMIE (300 G). M ap peye ak MonCash oswa Binance epi m ap voye prèv peman m ba ou.",
+            face: "Bonjou Andy, mwen vle debloke modil premium « Koze ak fanm — Fasafas » nan SIGMA ACADÉMIE (300 G). M ap peye ak MonCash oswa Binance epi m ap voye prèv peman m ba ou.",
+            pack: "Bonjou Andy, mwen vle PAK KONPLÈ SIGMA ACADÉMIE la (Telefòn + Fasafas — 750 G). M ap peye ak MonCash oswa Binance epi m ap voye prèv peman m ba ou."
+          }
+        };
+        var PAGES = ["home", "sigma", "homme", "standards", "parler", "telephone", "face"];
+        var TITLES = {
+          fr: { home: "SIGMA ACADÉMIE — Deviens un Homme, pas un garçon", sigma: "L'état d'esprit Sigma — SIGMA ACADÉMIE", homme: "Un Homme, pas un garçon — SIGMA ACADÉMIE", standards: "Tes standards — SIGMA ACADÉMIE", parler: "L'art de parler — SIGMA ACADÉMIE", telephone: "Koze ak fanm, Téléphone (Premium) — SIGMA ACADÉMIE", face: "Koze ak fanm, Fasafas (Premium) — SIGMA ACADÉMIE" },
+          ht: { home: "SIGMA ACADÉMIE — Vin tounen yon Nonm, pa yon ti gason", sigma: "Lespri Sigma — SIGMA ACADÉMIE", homme: "Yon Nonm, pa yon ti gason — SIGMA ACADÉMIE", standards: "Estanda w yo — SIGMA ACADÉMIE", parler: "Atizay pale — SIGMA ACADÉMIE", telephone: "Koze ak fanm, Telefòn (Premium) — SIGMA ACADÉMIE", face: "Koze ak fanm, Fasafas (Premium) — SIGMA ACADÉMIE" }
+        };
+        var lang = "fr";
+        try {
+          var saved = window.localStorage.getItem("sigma-academie-lang");
+          if (saved === "ht" || saved === "fr") lang = saved;
+        } catch (e) { /* stockage indisponible : on garde le français */ }
+
+        function currentPage() {
+          var h = (window.location.hash || "").replace(/^#\/?/, "");
+          return PAGES.indexOf(h) >= 0 ? h : "home";
+        }
+
+        function applyLang(next, save) {
+          lang = next === "ht" ? "ht" : "fr";
+          document.documentElement.setAttribute("data-lang", lang);
+          document.documentElement.setAttribute("lang", lang === "ht" ? "ht" : "fr");
+          document.getElementById("btn-fr").classList.toggle("on", lang === "fr");
+          document.getElementById("btn-ht").classList.toggle("on", lang === "ht");
+          var links = document.querySelectorAll("[data-wa]");
+          for (var i = 0; i < links.length; i++) {
+            var key = links[i].getAttribute("data-wa");
+            if (MESSAGES[lang][key]) links[i].setAttribute("href", WA + encodeURIComponent(MESSAGES[lang][key]));
+          }
+          document.title = TITLES[lang][currentPage()];
+          if (save) {
+            try { window.localStorage.setItem("sigma-academie-lang", lang); } catch (e) {}
+          }
+        }
+
+        function route() {
+          var page = currentPage();
+          var sections = document.querySelectorAll(".page");
+          for (var i = 0; i < sections.length; i++) {
+            sections[i].classList.toggle("current", sections[i].getAttribute("data-page") === page);
+          }
+          var navs = document.querySelectorAll("[data-nav]");
+          for (var j = 0; j < navs.length; j++) {
+            navs[j].classList.toggle("active", navs[j].getAttribute("data-nav") === page);
+          }
+          document.getElementById("mainnav").classList.remove("open");
+          document.getElementById("burger").setAttribute("aria-expanded", "false");
+          document.title = TITLES[lang][page];
+          window.scrollTo(0, 0);
+        }
+
+        document.getElementById("btn-fr").addEventListener("click", function () { applyLang("fr", true); });
+        document.getElementById("btn-ht").addEventListener("click", function () { applyLang("ht", true); });
+        document.getElementById("burger").addEventListener("click", function () {
+          var nav = document.getElementById("mainnav");
+          var open = nav.classList.toggle("open");
+          this.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+        window.addEventListener("hashchange", route);
+
+        // Liens internes avec cible de défilement dans la page d'accueil (ex. #tarifs)
+        document.querySelectorAll("[data-scroll]").forEach(function (el) {
+          el.addEventListener("click", function (ev) {
+            ev.preventDefault();
+            if (currentPage() !== "home") { window.location.hash = "#/home"; }
+            window.setTimeout(function () {
+              var target = document.getElementById(el.getAttribute("data-scroll"));
+              if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 60);
+          });
+        });
+        document.querySelectorAll("[data-goto]").forEach(function (el) {
+          el.addEventListener("click", function () {
+            window.setTimeout(function () {
+              var target = document.getElementById(el.getAttribute("data-goto"));
+              if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 80);
+          });
+        });
+
+        applyLang(lang, false);
+        route();
+      })();
+    </script>
+  </body>
+</html>
