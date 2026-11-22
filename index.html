@@ -147,6 +147,26 @@
       .btn.dark{background:var(--surface2); border-color:var(--line); color:var(--text)}
       .btn svg{width:18px; height:18px; flex:none}
       footer nav a svg{width:15px; height:15px; vertical-align:-2px; margin-right:6px}
+      /* ---------- moyens de paiement ---------- */
+      .paycards{display:grid; gap:14px; margin-top:22px}
+      @media(min-width:760px){.paycards{grid-template-columns:repeat(3,1fr)}}
+      .paycard{background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:20px}
+      .paycard .label{font-size:12.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:12px}
+      .paycard .num{font-size:26px; font-weight:800; margin:10px 0}
+      .paycard .note{color:var(--muted); font-size:14px; margin:8px 0 0}
+      .paycard .btn{margin-top:14px}
+      .mc-word{color:#ff2e4d; font-weight:800; font-size:25px; line-height:1.1}
+      .mc-word small{display:block; color:var(--muted); font-size:11.5px; letter-spacing:.22em; font-weight:600}
+      .bn-word{color:#f0b90b; font-weight:800; font-size:25px; display:flex; align-items:center; gap:10px}
+      .bn-word svg{width:30px; height:30px; flex:none}
+      .verified{display:inline-block; background:#12351f; color:#4ade80; border:1px solid #1f5c33; border-radius:99px; padding:2px 10px; font-size:12.5px; font-weight:700; margin:8px 0}
+      .usdt-word{color:#26a17b; font-weight:800; font-size:25px}
+      .usdt-word .tether{display:inline-grid; place-items:center; width:34px; height:34px; border-radius:50%; background:#26a17b; color:#fff; font-size:19px; margin-right:8px; vertical-align:-6px}
+      .qr-box{background:#fff; border-radius:14px; padding:10px; max-width:230px; margin:14px auto}
+      .qr-box img{width:100%; height:auto; display:block}
+      .usdt-link{word-break:break-all; text-align:center}
+      .usdt-link a{color:var(--gold2); text-decoration:underline}
+      .paybox .row a{color:var(--gold2)}
       .hero .mini{margin-top:26px; font-size:13.5px; color:#b9ac8d; letter-spacing:.04em}
       /* ---------- sections ---------- */
       section.block{padding:58px 0}
@@ -500,10 +520,10 @@
               </div>
               <div class="step">
                 <span class="n">02</span>
-                <h3 class="lg-fr">Paie en MonCash ou Binance</h3>
-                <h3 class="lg-ht">Peye ak MonCash oswa Binance</h3>
-                <p class="lg-fr">Envoie le paiement sur l'un des deux comptes ci-dessous, puis garde ta capture d'écran.</p>
-                <p class="lg-ht">Voye peman an sou youn nan de kont ki anba yo, epi kenbe kaptir ekran w lan.</p>
+                <h3 class="lg-fr">Paie en MonCash, Binance ou USDT</h3>
+                <h3 class="lg-ht">Peye ak MonCash, Binance oswa USDT</h3>
+                <p class="lg-fr">Envoie le paiement sur l'un des trois moyens ci-dessous, puis garde ta capture d'écran.</p>
+                <p class="lg-ht">Voye peman an sou youn nan twa mwayen ki anba yo, epi kenbe kaptir ekran w lan.</p>
               </div>
               <div class="step">
                 <span class="n">03</span>
@@ -513,9 +533,35 @@
                 <p class="lg-ht">Klike sou « Debloke » nan modil la, mete prèv peman w lan : aksè w la aktive.</p>
               </div>
             </div>
+            <div class="paycards">
+              <section class="paycard">
+                <div class="label">MonCash</div>
+                <div class="mc-word">MonCash<small>PA DIGICEL</small></div>
+                <p class="num">+509 34 97 9011</p>
+                <p class="note lg-fr">Nom du compte : Faub*** Fabio*** — vérifie le nom sur l'écran de confirmation MonCash avant d'envoyer l'argent.</p>
+                <p class="note lg-ht">Non kont lan : Faub*** Fabio*** — verifye non an sou ekran konfimasyon MonCash la anvan ou voye lajan an.</p>
+                <button class="btn dark" data-copy="+50934979011"><span class="lg-fr">Copier le numéro</span><span class="lg-ht">Kopye nimewo a</span></button>
+              </section>
+              <section class="paycard">
+                <div class="label">Binance</div>
+                <div class="bn-word"><svg viewBox="0 0 32 32" fill="#f0b90b"><polygon points="16,9 23,16 16,23 9,16"/><polygon points="16,2 20,6 16,10 12,6"/><polygon points="16,22 20,26 16,30 12,26"/><polygon points="2,16 6,12 10,16 6,20"/><polygon points="22,16 26,12 30,16 26,20"/></svg>Binance</div>
+                <p style="margin:10px 0 0"><b>andybazelais</b></p>
+                <span class="verified">Vérifié</span>
+                <p class="note">UID Binance Pay</p>
+                <p class="num" style="margin-top:2px">1253095098</p>
+                <button class="btn dark" data-copy="1253095098"><span class="lg-fr">Copier l'UID</span><span class="lg-ht">Kopye UID la</span></button>
+              </section>
+              <section class="paycard">
+                <div class="label">USDT — Binance Pay</div>
+                <div class="usdt-word"><span class="tether">₮</span>USDT</div>
+                <p class="note lg-fr" style="margin-top:6px">Binance Pay — scanne avec l'application Binance</p>
+                <p class="note lg-ht" style="margin-top:6px">Binance Pay — eskane ak aplikasyon Binance lan</p>
+                <div class="qr-box"><img src="assets/usdt-qr.svg" alt="Kòd QR pou peye an USDT sou Binance Pay" loading="lazy"></div>
+                <p class="usdt-link"><a href="https://app.binance.com/uni-qr/RKPDR3cs" target="_blank" rel="noopener">app.binance.com/uni-qr/RKPDR3cs</a></p>
+                <div style="text-align:center"><button class="btn dark" data-copy="https://app.binance.com/uni-qr/RKPDR3cs"><span class="lg-fr">Copier le lien</span><span class="lg-ht">Kopye lyen an</span></button></div>
+              </section>
+            </div>
             <div class="paybox">
-              <div class="row"><b>MonCash</b><span class="lg-fr">+509 34 97 9011 — Nom : Faub*** Fabio***</span><span class="lg-ht">+509 34 97 9011 — Non : Faub*** Fabio***</span></div>
-              <div class="row"><b>Binance Pay</b><span>ID : 1253095098</span></div>
               <div class="row"><b class="lg-fr">Tarifs</b><b class="lg-ht">Pri</b><span class="lg-fr">300 G par module premium · 750 G le pack complet (Téléphone + Fasafas)</span><span class="lg-ht">300 G pa modil premium · 750 G pak konplè a (Telefòn + Fasafas)</span></div>
             </div>
           </div>
@@ -1014,8 +1060,8 @@
           <div class="sec-head" style="margin:30px 0 6px">
             <h2 class="lg-fr" style="font-size:24px">La suite complète est <span style="color:var(--gold)">verrouillée</span></h2>
             <h2 class="lg-ht" style="font-size:24px">Rès konplè a <span style="color:var(--gold)">verouye</span></h2>
-            <p class="lg-fr">Ces trois modules contiennent les techniques exactes : timing, structure, phrases. 300 G le module — déblocage sur WhatsApp après paiement MonCash ou Binance.</p>
-            <p class="lg-ht">Twa modil sa yo gen teknik egzak yo : tayming, estrikti, fraz. 300 G modil la — deblokaj sou WhatsApp apre peman MonCash oswa Binance.</p>
+            <p class="lg-fr">Ces trois modules contiennent les techniques exactes : timing, structure, phrases. 300 G le module — déblocage sur WhatsApp après paiement MonCash, Binance ou USDT.</p>
+            <p class="lg-ht">Twa modil sa yo gen teknik egzak yo : tayming, estrikti, fraz. 300 G modil la — deblokaj sou WhatsApp apre peman MonCash, Binance oswa USDT.</p>
           </div>
 
           <div class="locked-card">
@@ -1028,7 +1074,7 @@
             <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
             <div class="unlock">
               <a class="btn gold" data-wa="tel" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
-              <span class="prix-note">300 G · MonCash / Binance</span>
+              <span class="prix-note">300 G · MonCash / Binance / USDT</span>
             </div>
           </div>
 
@@ -1042,7 +1088,7 @@
             <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
             <div class="unlock">
               <a class="btn gold" data-wa="tel" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
-              <span class="prix-note">300 G · MonCash / Binance</span>
+              <span class="prix-note">300 G · MonCash / Binance / USDT</span>
             </div>
           </div>
 
@@ -1056,13 +1102,14 @@
             <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
             <div class="unlock">
               <a class="btn gold" data-wa="tel" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
-              <span class="prix-note">300 G · MonCash / Binance</span>
+              <span class="prix-note">300 G · MonCash / Binance / USDT</span>
             </div>
           </div>
 
           <div class="paybox">
             <div class="row"><b>MonCash</b><span>+509 34 97 9011 — Nom : Faub*** Fabio***</span></div>
             <div class="row"><b>Binance Pay</b><span>ID : 1253095098</span></div>
+              <div class="row"><b>USDT</b><span>Binance Pay — <a href="https://app.binance.com/uni-qr/RKPDR3cs" target="_blank" rel="noopener">app.binance.com/uni-qr/RKPDR3cs</a></span></div>
             <div class="row"><b class="lg-fr">Comment ça marche</b><b class="lg-ht">Kijan sa mache</b><span class="lg-fr">Tu paies, tu cliques « Débloquer », tu envoies ta preuve de paiement sur WhatsApp — ton module est activé.</span><span class="lg-ht">Ou peye, ou klike « Debloke », ou voye prèv peman w sou WhatsApp — modil ou a aktive.</span></div>
           </div>
 
@@ -1125,8 +1172,8 @@
           <div class="sec-head" style="margin:30px 0 6px">
             <h2 class="lg-fr" style="font-size:24px">La suite complète est <span style="color:var(--gold)">verrouillée</span></h2>
             <h2 class="lg-ht" style="font-size:24px">Rès konplè a <span style="color:var(--gold)">verouye</span></h2>
-            <p class="lg-fr">Quatre modules techniques : la mécanique exacte de la confiance, de l'écoute et de la connexion. 300 G le module — déblocage sur WhatsApp après paiement MonCash ou Binance.</p>
-            <p class="lg-ht">Kat modil teknik : mekanik egzak konfyans, koute ak koneksyon. 300 G modil la — deblokaj sou WhatsApp apre peman MonCash oswa Binance.</p>
+            <p class="lg-fr">Quatre modules techniques : la mécanique exacte de la confiance, de l'écoute et de la connexion. 300 G le module — déblocage sur WhatsApp après paiement MonCash, Binance ou USDT.</p>
+            <p class="lg-ht">Kat modil teknik : mekanik egzak konfyans, koute ak koneksyon. 300 G modil la — deblokaj sou WhatsApp apre peman MonCash, Binance oswa USDT.</p>
           </div>
 
           <div class="locked-card">
@@ -1139,7 +1186,7 @@
             <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
             <div class="unlock">
               <a class="btn gold" data-wa="face" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
-              <span class="prix-note">300 G · MonCash / Binance</span>
+              <span class="prix-note">300 G · MonCash / Binance / USDT</span>
             </div>
           </div>
 
@@ -1153,7 +1200,7 @@
             <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
             <div class="unlock">
               <a class="btn gold" data-wa="face" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
-              <span class="prix-note">300 G · MonCash / Binance</span>
+              <span class="prix-note">300 G · MonCash / Binance / USDT</span>
             </div>
           </div>
 
@@ -1167,7 +1214,7 @@
             <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
             <div class="unlock">
               <a class="btn gold" data-wa="face" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
-              <span class="prix-note">300 G · MonCash / Binance</span>
+              <span class="prix-note">300 G · MonCash / Binance / USDT</span>
             </div>
           </div>
 
@@ -1181,13 +1228,14 @@
             <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
             <div class="unlock">
               <a class="btn gold" data-wa="face" href="https://wa.me/18735972113" target="_blank" rel="noopener"><span class="lg-fr">Débloquer sur WhatsApp</span><span class="lg-ht">Debloke sou WhatsApp</span></a>
-              <span class="prix-note">300 G · MonCash / Binance</span>
+              <span class="prix-note">300 G · MonCash / Binance / USDT</span>
             </div>
           </div>
 
           <div class="paybox">
             <div class="row"><b>MonCash</b><span>+509 34 97 9011 — Nom : Faub*** Fabio***</span></div>
             <div class="row"><b>Binance Pay</b><span>ID : 1253095098</span></div>
+              <div class="row"><b>USDT</b><span>Binance Pay — <a href="https://app.binance.com/uni-qr/RKPDR3cs" target="_blank" rel="noopener">app.binance.com/uni-qr/RKPDR3cs</a></span></div>
             <div class="row"><b class="lg-fr">Comment ça marche</b><b class="lg-ht">Kijan sa mache</b><span class="lg-fr">Tu paies, tu cliques « Débloquer », tu envoies ta preuve de paiement sur WhatsApp — ton module est activé.</span><span class="lg-ht">Ou peye, ou klike « Debloke », ou voye prèv peman w sou WhatsApp — modil ou a aktive.</span></div>
           </div>
 
@@ -1248,15 +1296,15 @@
         var MESSAGES = {
           fr: {
             general: "Bonjour Andy, je viens de SIGMA ACADÉMIE et je veux des informations sur les modules premium.",
-            tel: "Bonjour Andy, je veux débloquer le module premium « Koze ak fanm — Téléphone » de SIGMA ACADÉMIE (300 G). Je paie via MonCash ou Binance et je t'envoie ma preuve de paiement.",
-            face: "Bonjour Andy, je veux débloquer le module premium « Koze ak fanm — Fasafas » de SIGMA ACADÉMIE (300 G). Je paie via MonCash ou Binance et je t'envoie ma preuve de paiement.",
-            pack: "Bonjour Andy, je veux le PACK COMPLET SIGMA ACADÉMIE (Téléphone + Fasafas — 750 G). Je paie via MonCash ou Binance et je t'envoie ma preuve de paiement."
+            tel: "Bonjour Andy, je veux débloquer le module premium « Koze ak fanm — Téléphone » de SIGMA ACADÉMIE (300 G). Je paie via MonCash, Binance ou USDT et je t'envoie ma preuve de paiement.",
+            face: "Bonjour Andy, je veux débloquer le module premium « Koze ak fanm — Fasafas » de SIGMA ACADÉMIE (300 G). Je paie via MonCash, Binance ou USDT et je t'envoie ma preuve de paiement.",
+            pack: "Bonjour Andy, je veux le PACK COMPLET SIGMA ACADÉMIE (Téléphone + Fasafas — 750 G). Je paie via MonCash, Binance ou USDT et je t'envoie ma preuve de paiement."
           },
           ht: {
             general: "Bonjou Andy, mwen soti sou SIGMA ACADÉMIE epi mwen vle enfòmasyon sou modil premium yo.",
-            tel: "Bonjou Andy, mwen vle debloke modil premium « Koze ak fanm — Telefòn » nan SIGMA ACADÉMIE (300 G). M ap peye ak MonCash oswa Binance epi m ap voye prèv peman m ba ou.",
-            face: "Bonjou Andy, mwen vle debloke modil premium « Koze ak fanm — Fasafas » nan SIGMA ACADÉMIE (300 G). M ap peye ak MonCash oswa Binance epi m ap voye prèv peman m ba ou.",
-            pack: "Bonjou Andy, mwen vle PAK KONPLÈ SIGMA ACADÉMIE la (Telefòn + Fasafas — 750 G). M ap peye ak MonCash oswa Binance epi m ap voye prèv peman m ba ou."
+            tel: "Bonjou Andy, mwen vle debloke modil premium « Koze ak fanm — Telefòn » nan SIGMA ACADÉMIE (300 G). M ap peye ak MonCash, Binance oswa USDT epi m ap voye prèv peman m ba ou.",
+            face: "Bonjou Andy, mwen vle debloke modil premium « Koze ak fanm — Fasafas » nan SIGMA ACADÉMIE (300 G). M ap peye ak MonCash, Binance oswa USDT epi m ap voye prèv peman m ba ou.",
+            pack: "Bonjou Andy, mwen vle PAK KONPLÈ SIGMA ACADÉMIE la (Telefòn + Fasafas — 750 G). M ap peye ak MonCash, Binance oswa USDT epi m ap voye prèv peman m ba ou."
           }
         };
         var PAGES = ["home", "sigma", "homme", "standards", "parler", "telephone", "face"];
@@ -1334,6 +1382,17 @@
               var target = document.getElementById(el.getAttribute("data-goto"));
               if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
             }, 80);
+          });
+        });
+
+        // Boutons copier (moyens de paiement) — le texte bilingue est restauré après le retour visuel
+        document.querySelectorAll("[data-copy]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var v = b.getAttribute("data-copy");
+            if (navigator.clipboard) { navigator.clipboard.writeText(v); }
+            var h = b.innerHTML;
+            b.textContent = lang === "ht" ? "Kopye ✓" : "Copié ✓";
+            window.setTimeout(function () { b.innerHTML = h; }, 1600);
           });
         });
 
